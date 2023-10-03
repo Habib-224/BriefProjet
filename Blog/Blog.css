@@ -63,9 +63,7 @@
     color: black;
 }
 .Footer_Container_Element h5{
-    /* border-bottom: 2px solid #C87065; */
-    
-    
+    /* border-bottom: 2px solid #C87065; */   
 }
 
 @media screen and (max-width:700px) {
