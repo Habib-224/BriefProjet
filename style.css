@@ -45,6 +45,24 @@ body{
 
 }
 
+.text_inside{
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    padding-top: 0.5em;
+}
+
+.text_inside p:nth-child(1){
+    background-color: #C8A165;
+    padding: 0.2em;
+    border-radius: 2px;
+    color: white;
+}
+
+.text_inside p:nth-child(2){
+    font-size: 18px;
+}
+
 .Slide_left1{
     background-image: url('Public/image/product/2.jpg');
     background-position: center;
@@ -132,6 +150,19 @@ body{
 }
 
 /* ---------------------------------------------------- */
+
+.TriePushase{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.TriePushase h6:hover{
+    color: #C87065;
+    cursor: pointer;
+
+}
 
 .FeatureProduct{
     display: flex;
