@@ -1,0 +1,221 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+.image{
+    grid-column: 1/5;
+    grid-row: 1/3;
+    /* border: 1px solid black; */
+    height: 60vh;
+    background-color: white;
+}
+.jpg{
+  max-height: 100%;
+}
+
+.CATEGORIES{
+    grid-column: 5/6;
+    grid-row: 1/3;
+    /* border: 1px solid black; */
+    width: 230px;
+    background-color: white;
+}
+.DESCRIPTIONS{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    /* border: 1px solid black; */
+    height: 260px;
+}
+.CUSTOMER_REVIEW{
+    grid-column: 2/5;
+    grid-row: 3/4;
+    /* border: 1px solid black; */
+    width: 735px;
+    height: 650px;
+    background-color: white;
+}
+.RECENT_PRODUIT{
+    grid-column: 5/6;
+    grid-row: 3/4;
+    /* border: 1px solid black; */
+    width: 230px;
+    height: 370PX;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px;
+    background-color: white;
+}
+.BEST_BRAND{
+    grid-column: 5/6;
+    grid-row: 4/5;
+    /* border: 1px solid black; */
+    margin-top: -280px;
+    width: 300px;
+    background-color: white;
+    width: 280px;
+}
+.liste{
+    list-style: none;
+}
+.bouton{
+    background-color: white;
+    border: none;
+    list-style: none;
+    margin-left: -10px;
+}
+
+.fourniture{
+    color: #C87065;
+}
+.men{
+    margin-left: 20px;
+}
+#img{
+  width: 50px;
+  height: 50px;
+}
+.review{
+   list-style: none;
+}
+#icon{
+    display: flex;
+}
+.bouttone{
+    color: white;
+        background-color: #C87065 ;
+        width: 25%;
+        height: 30px;
+        margin-left: 20px;
+        margin-top: 10px;
+        border: none;
+    }
+.name{
+    margin-top: -50px;
+    margin-left: 60px;
+ hover{
+        color: #C8A165;
+    }
+}
+.RECENT_PRODUIT-liste{
+    gap: 30%;
+}
+.names{
+    margin-top: -100px;
+    margin-left: 130px;
+ hover{
+        color: #C8A165;
+    }
+}
+#images{
+ margin-left: 20px;
+}
+.trait{
+    max-width: 50px;
+    margin-inline-start: 5px;
+    margin-left: 50px;
+    margin-top: -12px;
+}
+.self{
+    width: 45%;
+    height: 30px;
+}
+#message{
+    width: 93%;
+    height: 90px;
+}
+.bout{
+    text-align: left;
+    margin-left: -40px;
+    margin-top: -16px;
+    list-style: none;
+    height: 60px;
+    width: 290px;
+    border: none;
+    background-color: white;
+}
+.boute{
+    text-align: left;
+    margin-left: -40px;
+    margin-top: -16px;
+    list-style: none;
+    height: 60px;
+    width: 290px;
+    background-color: #C8A165;
+    border: none;
+}
+#chaise{
+    box-shadow: 1px 1px 1px;
+    width: 250px;
+    margin-left: 12px;
+}
+.banner{
+    background-color: white;width: 100px;
+    border: 10px;
+}
+#premier{
+    height: 350px;
+}
+.major{
+    margin-top: -290px;
+    margin-left: 330px;
+}
+.color{
+    margin-left: 330px;
+}
+.deux{
+    background-color: #F6F6F6;
+    width: 10%;
+    margin-left: 330px;
+    height: 20px;
+}
+.un{
+    background-color: #F6F6F6;
+    width: 15%;
+    margin-left: 470px;
+    margin-top: -36px;
+    height: 20px;
+}
+.small{
+    margin-left: 330px;
+}
+.container{
+    display: grid;
+    background-color:#DDDDDD ;
+    justify-content: center;
+}
+@media only screen and (max-width: 900px){
+    .image{
+        display:grid;
+        grid-template-columns: 20% ;
+        justify-content: center;
+        margin-top: 8vh;
+      }
+    #icone{
+       display: none;
+    }
+    .CATEGORIES{
+        display:grid;
+        grid-template-columns: auto;
+        font-size: 15px;
+    }
+    .DESCRIPTIONS{
+        display:grid;
+        grid-template-columns: auto;
+        font-size: 15px;
+    }
+    .RECENT_PRODUIT{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .BEST_BRAND{
+        display:grid;
+        grid-template-columns: auto;
+        font-size: 15px;
+    }
+    .liste{
+        display:grid;
+        grid-template-columns: auto;
+        font-size: 15px;
+    }
+}

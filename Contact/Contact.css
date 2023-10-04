@@ -1,0 +1,167 @@
+
+:root{
+    --noir: #C87065;
+    --Clair: #F6F6F6;
+ }
+.titre{
+    text-align: center;
+}
+.titre .esp{
+    margin-bottom: 2vh;
+}
+.titre div {
+    position: relative;
+    width: 80px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: rgb(48, 145, 201);
+    margin: 0 auto;
+}
+
+.titre div span {
+    display: block;
+    position: relative;
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    animation: defilement ease-in-out 4s infinite;
+}
+.couleur{
+    color: var(--noir);
+}
+.Address{
+  display:grid;
+  grid-template-columns: 20% 20% 20%;
+  justify-content: center;
+  margin-top: 8vh;
+}
+.tel,.mail,.localisation{
+    display:flex;
+}
+.Address .icone{
+    margin-right: 1vh;
+    background-color: #06A3DA;
+    padding: 2vh;
+}
+.contenu{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin: 0 18vh;
+    margin-bottom: 14vh;
+     margin-top: 20vh;
+
+}
+.form{
+    padding: 6vh;
+    width: 100%;
+}
+.f1{
+    width: 49%;
+    height: 6vh;
+    margin-bottom: 2vh;
+    background-color:var(--Clair);
+    border: none;
+    padding: 2vh;
+}
+
+.f2{
+    width:  100%;
+    height: 6vh;
+    margin-bottom: 2vh;
+    background-color:var(--Clair);
+    border: none;
+    padding: 2vh;
+}
+.form textarea{
+    width: 100%;
+    margin-bottom: 2vh;
+    background-color: var(--Clair);
+    border: none;
+    padding: 2vh;
+}
+::placeholder{
+    color: #747373;
+    font-size: 9px;
+}
+.form button{
+    width: 50%;
+    margin-bottom: 2vh;
+    background-color: var(--noir);
+    color: #fff;
+    border: none;
+    height: 6vh;
+}
+#map{
+    width: 98vh;
+}
+.fa-icon{
+    display: flex;
+    margin-left: 170px;
+}
+.partenaire{
+    text-align: center;
+    margin-left: 2vh;
+    margin-bottom: 10vh;
+}
+.partenaire img{
+    width: 15vh;
+    height: 9vh;
+}
+.fa-solidfa-phone{
+    background-color: #747373;
+}
+.toute{
+    text-align: center;
+}
+.trait{
+    margin-left: 2px;
+    margin-top: -20px;
+}
+#icon{
+    margin-top: 30px;
+    background-color: #F6F6F6;
+    width: 30px;
+    height: 20px;
+    margin-left: -150px;
+}
+.num{
+    margin-top: 20px;
+}
+@media only screen and (max-width: 900px){
+    .Address{
+        display:grid;
+        grid-template-columns: 20% ;
+        justify-content: center;
+        margin-top: 8vh;
+      }
+    .Address .icone{
+       display: none;
+    }
+    .tel,.mail,.localisation{
+        display:grid;
+        grid-template-columns: auto;
+        font-size: 15px;
+    }
+    .couleur{
+        color: var(--noir);
+        font-size: 12px;
+    }
+    .contenu{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    #map{
+        width: 25vh;
+        height: 40vh;
+    }
+    .f1{
+        width: 100%;
+        height: 6vh;
+        margin-bottom: 1vh;
+        background-color:var(--Clair);
+        border: none;
+        padding: 2vh;
+    }
+}
