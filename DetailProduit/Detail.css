@@ -183,6 +183,9 @@
     background-color:#DDDDDD ;
     justify-content: center;
 }
+#chevron{
+    margin-top: 10px;
+}
 @media only screen and (max-width: 900px){
     .image{
         display:grid;
