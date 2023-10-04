@@ -1,0 +1,86 @@
+ #MenuSec {
+     position: absolute;
+     left: -250px;
+
+ }
+
+ #X_Bar {
+     display: none;
+     /* margin-top: -50px; */
+     /* z-index: 3; */
+     margin-left: 30px;
+ }
+
+
+ #MenuSec ul {
+     padding-top: 10em;
+     width: 100%;
+ }
+
+ #MenuSec ul li {
+     list-style: none;
+     line-height: 40px;
+     padding-left: 5em;
+     width: 100%;
+     font-weight: bold;
+     color: #666666;
+ }
+
+ #MenuSec ul li:hover {
+     background-color: #C8A165;
+     color: white;
+ }
+
+
+ #MenuSec ul li a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .Menu {
+     position: sticky;
+     top: 0;
+     z-index: 3;
+     background-color: white;
+ }
+
+ .Menu ul {
+     display: flex;
+     justify-content: space-between;
+     list-style: none;
+     padding: 1em;
+     background-color: #FFFFFF;
+ }
+
+ .Menu ul li {
+     padding-left: 1em;
+     padding-right: 1em;
+ }
+
+ .Container_Banner {
+     background: linear-gradient(0deg, #04061b67, #04061b67), url("");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 300px;
+
+ }
+
+
+ .Container_Banner_Link {
+     color: white;
+     margin-top: 80px;
+     font-size: 20px;
+     font-weight: bold;
+     margin-left: 90px;
+
+ }
+
+ .Container_Banner h1 {
+     color: white;
+     text-align: center;
+     padding-top: 2.8em;
+     font-weight: bold;
+     font-size: 40px;
+
+ }
