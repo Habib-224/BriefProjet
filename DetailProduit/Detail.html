@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="footer .css">
+    <title>detail</title>
+    
+</head>
+<style>
+  #MenuSec{
+     position: absolute;
+     left: -250px;
+
+ }
+
+ #X_Bar{
+     display: none;
+     /* margin-top: -50px; */
+     /* z-index: 3; */
+     margin-left: 30px;
+ }
+</style>
+<body>
+  <div class="Menu">
+    <ul>
+        <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
+        <li ><img src="../Public/image/logo/logo.png" alt=""></li>
+        <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+    </ul>
+    <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
+    
+  </div>
+
+  <div class="Container_Banner">
+    <h1>ABOUT US</h1>
+    <div class="Container_Banner_Link">
+        <p>Home/Shop</p>
+    </div>
+</div>
+
+<br>
+    <div id="MenuSec" >
+        <ul>
+            
+            <li><a href="">HOME</a></li>
+            <li><a href="../Produit/Produit.html">PRODUCTS</a></li>
+            <li><a href="">SHORTCODES</a></li>
+            <li><a href="">ACCESSOIRES</a></li>
+            <li><a href="">LOOKBOOK</a></li>
+            <li><a href="../Blog/Blog.html">BLOG</a></li>
+            <li><a href="">PAGES</a></li>
+            <li><a href="../About/About.html">ABOUT US</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function afficher(){
+
+            let menu = document.getElementById('MenuSec');
+            let X_Bar = document.getElementById('X_Bar');
+            let MenuBarx = document.getElementById("MenuBarx");
+            // menu.id.add('SecondMenuul')
+            menu.style.left="0";
+            menu.style.top="20px";
+            menu.style.transition="0.5s"
+            menu.style.backgroundColor="white";
+            menu.style.width="300px";
+            menu.style.height="1000px";
+            menu.style.position="fixed";
+            menu.style.marginTop="25px";
+            // menu.style.zIndex=6;
+            X_Bar.style.display="block";
+            X_Bar.style.position="absolute";
+            X_Bar.style.top="10px";
+            X_Bar.style.zIndex=5;
+            MenuBarx.style.visibility="hidden ";
+            
+            // X_Bar.style.marginTop="50px";
+            
+        }
+
+        function cacher(){
+            let menu = document.getElementById('MenuSec');
+            let X_Bar = document.getElementById('X_Bar');
+            let MenuBarx = document.getElementById("MenuBarx");
+            // menu.id.add('SecondMenuul')
+            menu.style.left="-400px";
+            // menu.style.top="20px";
+            menu.style.transition="0.5s"
+            // menu.style.backgroundColor="white";
+            // menu.style.width="300px";
+            // menu.style.height="1000px";
+            // menu.style.position="fixed";
+            // menu.style.marginTop="25px";
+            // menu.style.zIndex=6;
+            X_Bar.style.display="none";
+            X_Bar.style.zIndex=5;
+            MenuBarx.style.visibility="visible ";
+        }
+    </script>
+  <div class="container">
+    <div class="grid-container">
+        <div class="image">
+          <img src="https://htmldemo.net/tm/hurst/hurst/img/single-product/medium/1.jpg" id="premier">
+          <p class="major">There are many variations of passages of Lorem Ipsum available, but the <br> majority have be suffered alteration in some form, by injected humou or <br> randomised words which donot look even slightly believable. If you are <br> going to use a passage of Lorem Ipsum.</p>
+          <p class="color">color  &ensp; &ensp;<i class="fa-solid fa-square" style="color: #ffa07a;"></i>
+            &ensp;<i class="fa-solid fa-square" style="color: #e9967a;"></i>
+            &ensp;<i class="fa-solid fa-square" style="color: #c38b4b;"></i>
+            &ensp;<i class="fa-solid fa-square" style="color: #fe5858;"></i>
+            &ensp;<i class="fa-solid fa-square" style="color: #00b2ee;"></i></p>
+          <p class="color">Size    
+            &ensp;&ensp; M &ensp; S  &ensp;L &ensp;SL &ensp;XL</p>
+            <p class="deux">&ensp;&ensp; -&ensp; | &ensp;02&ensp;| &ensp;+</p>
+            <p class="un">&ensp;&ensp; <i class="fa-regular fa-heart" style="color: #000001;"></i>&ensp; | &ensp;<i class="fa-solid fa-magnifying-glass-plus" style="color: #000000;"></i>&ensp;| &ensp;<i class="fa-solid fa-rotate" style="color: #000001;"></i>
+            |&ensp;<i class="fa-solid fa-cart-plus" style="color: #000001;"></i></p>
+            <p class="small"><img src="https://htmldemo.net/tm/hurst/hurst/img/single-product/small/1.jpg" alt="">
+            <img src="https://htmldemo.net/tm/hurst/hurst/img/single-product/small/2.jpg" alt="">
+          <img src="https://htmldemo.net/tm/hurst/hurst/img/single-product/small/3.jpg" alt="">
+         <img src="https://htmldemo.net/tm/hurst/hurst/img/single-product/small/4.jpg" alt=""></p>
+        </div>
+        <div class="CATEGORIES">
+          <ul>
+            <li class="bouton">CATEGORIES</li> 
+            </ul>
+            <hr class="trai">
+          <ul class="liste">
+            <li>Chair</li>
+            <br>
+            <li class="fourniture">Furniture</li>
+            <br>
+            <li class="men">Men Bag</li>
+            <br>
+            <li class="men">Shoes</li>
+            <br>
+            <li class="men">Watch</li>
+            <br>
+            <li class="men">T-Shirt</li>
+            <br>
+            <li class="men">Shirt</li>
+            <br>
+            <li>Acessoires</li>
+            <br>
+            <li>Top Brands</li>
+            <br>
+            <li>Jewelry</li>
+          </ul>
+        </div>
+        <div class="DESCRIPTIONS">
+         <ul>
+            <li><button class="bout">&ensp; Description</button></li>
+            <br>
+            <li class="descript"> <button class="boute">&ensp; Reviews</button></li>
+             <br>
+            <li class="descript"><button class="bout">&ensp; Information</button></li>
+            <br>
+            <li class="descript"><button class="bout">&ensp; Tags</button></li>
+        </ul>
+        </div>
+        <div class="CUSTOMER_REVIEW">
+          <ul>
+            <li class="bouton">CUSTOMER REVIEW</li> 
+            </ul>
+            <hr class="trait">
+            <ul class="review">
+              <li><img src="https://htmldemo.net/tm/hurst/hurst/img/reviewer/1.jpg" alt=""><p class="names">GERALD BARNES <br>
+                27 Jun, 2021 at 2:30pm <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas <br> elese ifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et <br> messages in con sectetur posuere dolor non.</p></li>
+                <br>
+                <li><img src="https://htmldemo.net/tm/hurst/hurst/img/reviewer/1.jpg" id="images"><p class="names">GERALD BARNES <br>
+                  27 Jun, 2021 at 2:30pm <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas <br> elese ifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et <br> messages in con sectetur posuere dolor non.</p></li>
+            </ul>
+            <div>
+              <ul>
+                <li class="bouton">LEAVE YOUR REVIW</li> 
+                </ul>
+                <hr class="trait">
+                <ul>
+                  <li class="bouton">Your Rating</li> 
+                  </ul>
+                  <span class="icon">&ensp;&ensp;&ensp;&ensp;<i class="fa-regular fa-star" style="color: #ecaa76;"></i></span> &ensp;|
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>&ensp;|
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>&ensp;|
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span> 
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>&ensp;|
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>
+                  <span><i class="fa-regular fa-star" style="color: #ecaa76;"></i></span>
+            </div>
+            <br>
+            <div>
+              &ensp; &ensp;<input class="self" type="text" placeholder="your name here..."> &ensp;
+              <input  class="self" type="text" placeholder="subject...">
+            </div>
+            <div>
+              <br>
+              &ensp; &ensp;<textarea name="" id="message" >Your review here...</textarea>
+            </div>
+            <div>
+              <button class="bouttone">&ensp;&ensp;SUBMIT MESSAGE</button>
+           </div>
+        </div>
+       
+        <div class="RECENT_PRODUIT">
+          <ul>
+            <li class="bouton">RECENT_PRODUCTS</li> 
+            </ul>
+            <hr class="trai">
+          <ul class="liste">
+            <li class="produit"><img src="https://htmldemo.net/tm/hurst/hurst/img/product/12.jpg" id="img"><p class="name">PRODUCT NAME<br>56.20$</p></li>
+            <br>
+            <li><img src="https://htmldemo.net/tm/hurst/hurst/img/product/1.jpg" id="img"><p class="name">PRODUCT NAME<br>56.20$</p></li>
+            <br>
+            <li><img src="https://htmldemo.net/tm/hurst/hurst/img/product/6.jpg" id="img"><p class="name">PRODUCT NAME<br>56.20$</p></li>
+            <br>
+            <li><img src="https://htmldemo.net/tm/hurst/hurst/img/product/3.jpg" id="img"><p class="name">PRODUCT NAME<br>56.20$</p></li>
+            <br>
+          </ul>
+        </div>
+        <div class="BEST_BRAND">
+          <div class="banner">
+           <img src="https://htmldemo.net/tm/hurst/hurst/img/banner/5.jpg" id="chaise">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  
+  <!-- <div class="Footer_Container">
+    <div class="Footer_Container_Element">
+        <h6>CONTACT US</h6>
+        <hr>
+        <div class="Footer_Container_Element_Contact">
+              <p>Address:Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;City Name, Country Name</p>
+              <p>Cell-Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012 345 678 0123</p>
+              <p>Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@example.com.com</p>
+        </div>
+    </div>
+    <div class="Footer_Container_Element">
+        <h6>ACCOUNTS</h6>
+        <hr>
+        <p><i class="fa-solid fa-circle-dot"></i>&nbsp;My Account</p>
+        <p><i class="fa-solid fa-circle-dot"></i>&nbsp; My Wishlist</p>
+        <p><i class="fa-solid fa-circle-dot"></i>&nbsp;My Cart</p>
+        <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Sign In</p>
+        <p><i class="fa-solid fa-circle-dot"></i>&nbsp;  Check out</p>
+    </div>
+    <div class="Footer_Container_Element">
+        <h6>SHIPPING</h6>
+        <hr>
+        <p><i class="fa-solid fa-circle-dot"></i>&nbsp;New Products</p>
+        <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Top Sellers</p>
+        <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Manufactirers</p>
+        <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Suppliers</p>
+        <p><i class="fa-solid fa-circle-dot"></i>&nbsp; Specials</p>
+    </div>
+    <div class="Footer_Container_Element">
+        <h6>EMAIL NEWSLETTERS</h6>
+        <hr>
+        <input type="Email" placeholder="Email Address......"><br>
+        <button>SUBSCRIBE</button><br>
+    </div>
+    <br><br><br><br>
+</div> -->
+<!-- <div class="Footer_Container_Paiement">
+    <p>© Hurst 2022. All Rights Reserved.</p>
+   <div class="Footer_Container_Paiement_img">
+     <img src="../Public/image/payment/1.png" alt="">
+     <img src="../Public/image/payment/2.png" alt="">
+     <img src="../Public/image/payment/3.png" alt="">
+   </div>
+</div> -->
+</body>
+</html>
