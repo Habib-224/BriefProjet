@@ -33,7 +33,7 @@
     margin-top: 10px;
 }
 
-.remove-button {
+.remove-button .cart-plus-minus-box{
     background-color: #ff0000;
     color: #fff;
     border: none;
@@ -53,4 +53,3 @@
     background-color: #C8A165;
     color:white !important;
 }
-
