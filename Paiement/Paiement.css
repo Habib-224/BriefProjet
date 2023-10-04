@@ -1,0 +1,22 @@
+.custom-select{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 5vh;
+}
+.first {
+    /* border: 1px solid red; */
+    height: 83vh;
+
+}
+input{
+    /* border: 1px solid blue; */
+    width: 98.4%;
+    height: 5vh;
+
+}
+textarea{
+    /* border: 1px solid blue; */
+    width: 98.4%;
+    height: 15vh;
+
+}
