@@ -10,19 +10,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Gruppo&family=Oxygen:wght@300&family=Poppins:wght@100&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" >
     <link rel="stylesheet" href="Blog.css">
     
 </head>
 <body>
     <div class="page_blog">
         <section>
-            <div> Menu</div>
+            <div>
+              <div class="Menu">
+                <ul>
+                    <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
+                    <li ><img src="../Public/image/logo/logo.png" alt=""></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+                </ul>
+                <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
+                
+            </div>
+            <div class="Container_Banner">
+                <h1>BLOG</h1>
+                <div class="Container_Banner_Link">
+                    <p>Home / Shop</p>
+                </div>
+            </div>
+            
+            <br><br>
+            <div id="MenuSec" >
+                <ul>
+                    
+                    <li><a href="">HOME</a></li>
+                    <li><a href="../Produit/Produit.html">PRODUCTS</a></li>
+                    <li><a href="">SHORTCODES</a></li>
+                    <li><a href="">ACCESSOIRES</a></li>
+                    <li><a href="">LOOKBOOK</a></li>
+                    <li><a href="../Blog/Blog.html">BLOG</a></li>
+                    <li><a href="">PAGES</a></li>
+                    <li><a href="../About/About.html">ABOUT US</a></li>
+                    <li><a href="../Contact/Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            </div>
         </section>
         <section>
             <div class="bg-light">
-                <div>
-                    <!-- <img src="../Blog/bg/1.jpg" alt=""> -->
+                <!-- <div>
+                    <img src="../Blog/bg/1.jpg" alt=""> 
                     <div class="card bg-dark text-white">
                         <img src="../Blog/bg/1.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay bg-dark bg-opacity-75">
@@ -30,9 +62,9 @@
                           <p class="card-text ">Home / Blog</p>
                         </div>
                       </div>
-                </div>
+                </div> -->
                 <div>
-                    <div class="d-flex bg-white w-75 mx-auto m-3 justify-content-between">
+                    <div class="d-flex bg-white w-75 mx-auto m-3  justify-content-between">
                         <ul class="nav">    
                                 <li class="nav-item">
                                   <a class="nav-link" href="#">Categorie</a>
@@ -47,7 +79,7 @@
                                   <a class="nav-link " href="#">Size</a> 
                                 </li>                  
                         </ul>      
-                        <p class="m-1"> Showing 01-09 of 17 Results  </p>
+                        <p class="m"> Showing 01-09 of 17 Results  </p>
                     </div>
                     <div class="">
                         <div class="container">
@@ -332,6 +364,51 @@
         </footer>
         </div>
     </div>
+    <script>
+      function afficher(){
+  
+          let menu = document.getElementById('MenuSec');
+          let X_Bar = document.getElementById('X_Bar');
+          let MenuBarx = document.getElementById("MenuBarx");
+          // menu.id.add('SecondMenuul')
+          menu.style.left="0";
+          menu.style.top="20px";
+          menu.style.transition="0.5s"
+          menu.style.backgroundColor="white";
+          menu.style.width="300px";
+          menu.style.height="1000px";
+          menu.style.position="fixed";
+          menu.style.marginTop="25px";
+          // menu.style.zIndex=6;
+          X_Bar.style.display="block";
+          X_Bar.style.position="absolute";
+          X_Bar.style.top="10px";
+          X_Bar.style.zIndex=5;
+          MenuBarx.style.visibility="hidden ";
+          
+          // X_Bar.style.marginTop="50px";
+          
+      }
+  
+      function cacher(){
+          let menu = document.getElementById('MenuSec');
+          let X_Bar = document.getElementById('X_Bar');
+          let MenuBarx = document.getElementById("MenuBarx");
+          // menu.id.add('SecondMenuul')
+          menu.style.left="-400px";
+          // menu.style.top="20px";
+          menu.style.transition="0.5s"
+          // menu.style.backgroundColor="white";
+          // menu.style.width="300px";
+          // menu.style.height="1000px";
+          // menu.style.position="fixed";
+          // menu.style.marginTop="25px";
+          // menu.style.zIndex=6;
+          X_Bar.style.display="none";
+          X_Bar.style.zIndex=5;
+          MenuBarx.style.visibility="visible ";
+      }
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
