@@ -4,7 +4,14 @@
     display: block; 
     /* margin: 0 auto; */
 }
-
+.buton_validation{
+    background-color: #C87065;
+    border:2px solid #C87065;
+}
+.buton_validation:hover{
+    background-color: #C8A165;
+    color: white;
+}
 *{
     margin: 0;
     padding: 0;
@@ -84,4 +91,18 @@
         color: black;
     }
 }
+@media screen and (max-width:900px){
+    .blog_validation{
+        display: flex;
+       flex-direction: column;
+        
+    }
+
+}
 /* Fin Section Footer */
+/* .blog_validation{
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   align-self: auto;
+ 
+} */
