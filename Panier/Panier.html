@@ -16,12 +16,25 @@
             background-color: #A2A1A1;
         }
         
-        .custom-card {
+        #MenuSec{
+        position: absolute;
+        left: -250px;
+
+    }
+
+    #X_Bar{
+        display: none;
+        /* margin-top: -50px; */
+        /* z-index: 3; */
+        margin-left: 30px;
+    }
+
+        /* .custom-card {
             
             max-height: 300px; 
             overflow-y: auto; 
             margin-bottom: 20px; 
-        }
+        } */
         
         /* .table-container {
             overflow-x: scroll;
@@ -30,26 +43,106 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <div class="row justify-content-center ">
-            <div class="col-sm-6 col-md-3 mb-3">
-                <div class="card custom-card lienss"style=" text-align: center;padding: 10px;">
-                    <a style="text-decoration: none; color: black;" class="active" href="#shopping-cart">SHOPPING CART</a>
+
+
+
+    <div class="Menu">
+        <ul>
+            <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
+            <li ><img src="../Public/image/logo/logo.png" alt=""></li>
+            <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+        </ul>
+        <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
+        
+    </div>
+    <div class="Container_Banner">
+        <h1>CONTACT US</h1>
+        <div class="Container_Banner_Link">
+            <p>Home/Contact</p>
+        </div>
+    </div>
+    
+    <br>
+    <div id="MenuSec" >
+        <ul>
+            
+            <li><a href="">HOME</a></li>
+            <li><a href="../Produit/Produit.html">PRODUCTS</a></li>
+            <li><a href="">SHORTCODES</a></li>
+            <li><a href="">ACCESSOIRES</a></li>
+            <li><a href="">LOOKBOOK</a></li>
+            <li><a href="../Blog/Blog.html">BLOG</a></li>
+            <li><a href="">PAGES</a></li>
+            <li><a href="../About/About.html">ABOUT US</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function afficher(){
+
+            let menu = document.getElementById('MenuSec');
+            let X_Bar = document.getElementById('X_Bar');
+            let MenuBarx = document.getElementById("MenuBarx");
+            // menu.id.add('SecondMenuul')
+            menu.style.left="0";
+            menu.style.top="20px";
+            menu.style.transition="0.5s"
+            menu.style.backgroundColor="white";
+            menu.style.width="300px";
+            menu.style.height="1000px";
+            menu.style.position="fixed";
+            menu.style.marginTop="25px";
+            // menu.style.zIndex=6;
+            X_Bar.style.display="block";
+            X_Bar.style.position="absolute";
+            X_Bar.style.top="10px";
+            X_Bar.style.zIndex=5;
+            MenuBarx.style.visibility="hidden ";
+            
+            // X_Bar.style.marginTop="50px";
+            
+        }
+
+        function cacher(){
+            let menu = document.getElementById('MenuSec');
+            let X_Bar = document.getElementById('X_Bar');
+            let MenuBarx = document.getElementById("MenuBarx");
+            // menu.id.add('SecondMenuul')
+            menu.style.left="-400px";
+            // menu.style.top="20px";
+            menu.style.transition="0.5s"
+            // menu.style.backgroundColor="white";
+            // menu.style.width="300px";
+            // menu.style.height="1000px";
+            // menu.style.position="fixed";
+            // menu.style.marginTop="25px";
+            // menu.style.zIndex=6;
+            X_Bar.style.display="none";
+            X_Bar.style.zIndex=5;
+            MenuBarx.style.visibility="visible ";
+        }
+    </script>
+    <div class="container mt-5 ">
+        <div class="row justify-content-center  ">
+            <div class="col-sm-6 col-md-3 mb-3 ">
+                <div class="card custom-card lienss"style=" text-align: center;">
+                    <a style="text-decoration: none; color: black;" class="active p-4" href="#shopping-cart">SHOPPING CART</a>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 mb-3">
-                <div class="card custom-card lienss" style=" text-align: center;padding: 10px;">
-                    <a style="text-decoration: none; color: black;" href="#wishlist">WISHLIST</a>
+                <div class="card custom-card lienss" style=" text-align: center;">
+                    <a class="active p-4" style="text-decoration: none; color: black;" href="#wishlist">WISHLIST</a>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 mb-3">
-                <div class="card custom-card lienss"style=" text-align: center;padding: 10px;">
-                    <a style="text-decoration: none; color: black;" href="#check-out">CHECK OUT</a>
+                <div class="card custom-card lienss"style=" text-align: center;">
+                    <a class="active p-4" style="text-decoration: none; color: black;" href="#check-out">CHECK OUT</a>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 mb-3">
-                <div class="card custom-card lienss"style=" text-align: center;padding: 10px;">
-                    <a style="text-decoration: none; color: black;" href="#order-complete">ORDER COMPLETE</a>
+                <div class="card custom-card lienss"style=" text-align: center;">
+                    <a class="active p-4" style="text-decoration: none; color: black;" href="#order-complete">ORDER COMPLETE</a>
                 </div>
             </div>
         </div>
@@ -166,7 +259,7 @@
         </div>
         <div class="row justify-content-center mt-3">
             <div class="col-md-6 align-items-stretch">
-                <div class="card custom-card col" style="padding: 7vh;">
+                <div class="card custom-card col mb-2" style="padding: 7vh;">
                     <h4 class="title-1 title-border text-uppercase">coupon discount</h4>
                     <span class="text-gray">Enter your coupon code if you have one!</span>
                     <input type="text" placeholder="Enter your code here." class="mt-3">
@@ -176,7 +269,7 @@
                 </div>
             </div>
             <div class="col-md-6 align-items-stretch">
-                <div class="card custom-card"style="padding: 15px;">
+                <div class="card custom-card mb-2"style="padding: 15px;">
                     <h4 class="title-1 title-border text-uppercase">payment details</h4>
                     <table class="table">
                         <tbody>
@@ -203,7 +296,7 @@
             <br>
             <br>
             <div class="col-md-12">
-                <div class="card custom-card">
+                <div class="card custom-card mb-2 mt-2">
                     <h4 class="title-1 title-border text-uppercase">calculate shipping</h4>
                     <p class="text-gray">Enter your coupon code if you have one!</p>
                     <div class="row">

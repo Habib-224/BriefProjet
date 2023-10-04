@@ -1,8 +1,20 @@
-.cart-plus-minus-box{
+/* Responsive styles for cart items */
+.cart-plus-minus-box {
     text-align: center;
     width: 3vh;
     font-size: 13px;
 }
+
+.lienss:focus-within{
+    background-color:#C8A165;
+}
+.lienss a:focus-within{
+    background-color:#C8A165;
+    color: #fff !important;
+
+}
+
+/* Overlay styles for pop-up */
 .overlay {
     display: flex;
     justify-content: center;
@@ -16,16 +28,19 @@
     z-index: 9;
 }
 
+/* Pop-up styles */
 .pop_up {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    max-width: 80%; 
+    width: 80%; 
+    max-width: 400px; /* Set your desired max-width */
     max-height: 80%; 
     overflow-y: auto; 
 }
 
+/* Cart item styles */
 .cart-item {
     display: flex;
     justify-content: space-between; 
@@ -33,7 +48,8 @@
     margin-top: 10px;
 }
 
-.remove-button .cart-plus-minus-box{
+/* Remove button styles */
+.remove-button .cart-plus-minus-box {
     background-color: #ff0000;
     color: #fff;
     border: none;
@@ -45,11 +61,95 @@
 .remove-button:hover {
     background-color: #cc0000;
 }
-.lienss:focus-within {
-    background-color: #C8A165;
+
+/*  menu styles */
+.Menu {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
 }
 
-.lienss a:focus-within {
+.Menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1em;
+    background-color: #FFFFFF; 
+}
+
+.Menu ul li {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Banner styles */
+.Container_Banner {
+    background: linear-gradient(0deg, #04061b67, #04061b67), url("../Public/image/Background/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.Container_Banner_Link {
+    color: white;
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+.Container_Banner h1 {
+    color: white;
+    text-align: center;
+    padding-top: 2.8em;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* Blog card styles */
+.card1_blog {
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    /* ... autres styles ... */
+}
+
+#MenuSec {
+    z-index: 1; 
+    background-color: white; 
+    padding: 10px; 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); 
+}
+
+#MenuSec ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#MenuSec ul li {
+    line-height: 40px;
+    font-weight: bold;
+    color: #666666;
+}
+
+#MenuSec ul li:hover {
     background-color: #C8A165;
-    color:white !important;
+    color: white;
+}
+
+#MenuSec ul li a {
+    text-decoration: none;
+    color: black;
 }

@@ -39,7 +39,7 @@
 .Footer_Container_Paiement{
     display: flex;
     justify-content: space-between;
-    background-color:#F2F2F2;
+    background-color:#F2F2F2 !important;
     /* row-gap: 300px; */
 }
 
