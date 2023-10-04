@@ -1,3 +1,8 @@
+.cart-plus-minus-box{
+    text-align: center;
+    width: 3vh;
+    font-size: 10px;
+}
 .overlay {
     display: flex;
     justify-content: center;

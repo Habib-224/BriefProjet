@@ -8,9 +8,10 @@
         }
 
         .custom-card {
-            text-align: center;
+           
             max-height: 300px; 
-    overflow-y: auto;  
+             overflow-y: auto; 
+             margin-bottom: 20px; 
         }
 
         .table-container {
@@ -29,27 +30,27 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-sm-6 col-md-3 mb-3">
-                <div class="card custom-card">
+                <div class="card custom-card"style=" text-align: center;padding: 10px;">
                     <a style="text-decoration: none;" class="active" href="#shopping-cart">shopping cart</a>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 mb-3">
-                <div class="card custom-card">
-                    <a href="#wishlist">wishlist</a>
+                <div class="card custom-card" style=" text-align: center;padding: 10px;">
+                    <a style="text-decoration: none;" href="#wishlist">wishlist</a>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 mb-3">
-                <div class="card custom-card">
+                <div class="card custom-card"style=" text-align: center;padding: 10px;">
                     <a style="text-decoration: none;" href="#check-out">check out</a>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 mb-3">
-                <div class="card custom-card">
+                <div class="card custom-card"style=" text-align: center;padding: 10px;">
                     <a style="text-decoration: none;" href="#order-complete">order complete</a>
                 </div>
             </div>
         </div>
-        <div class="table-container">
+        <div class="table-container" style=" text-align: center;">
             <table class="table table-bordered">
                 <thead class="thead-dark">
                     <tr>
@@ -162,7 +163,7 @@
         </div>
         <div class="row justify-content-center mt-3">
             <div class="col-md-6 align-items-stretch">
-                <div class="card custom-card">
+                <div class="card custom-card col" style="padding: 7vh;">
                     <h4 class="title-1 title-border text-uppercase">coupon discount</h4>
                     <span class="text-gray">Enter your coupon code if you have one!</span>
                     <input type="text" placeholder="Enter your code here." class="mt-3">
@@ -171,7 +172,7 @@
                 </div>
             </div>
             <div class="col-md-6 align-items-stretch">
-                <div class="card custom-card">
+                <div class="card custom-card"style="padding: 15px;">
                     <h4 class="title-1 title-border text-uppercase">payment details</h4>
                     <table class="table">
                         <tbody>
@@ -212,8 +213,8 @@
                             <input type="text" placeholder="Post code">
                         </div>
                     </div>
-                    <button type="submit" data-text="get a quote"
-                        class="button-one submit-button mt-3">get a quote</button>
+                    <div class="col-md-4"><button type="submit" data-text="get a quote"
+                        class="button-one submit-button btn-sm mt-3">get a quote</button></div>
                 </div>
             </div>
         </div>
