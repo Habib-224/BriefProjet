@@ -5,10 +5,10 @@
     display: block; 
     margin: 0 auto;
 }
-.about_header_text{
+.about_header_text{ 
  margin-left: -120px;
  margin-top: 15px;
-}
+} 
 .about_hover:hover{
     background-color: #d3766b;
     box-shadow: 0 0 10px #c0c0c0;
@@ -184,3 +184,23 @@
 
 
 /* fin menu  */
+/* @media (min-width: 768px) and (max-width: 991px) { */
+/* .page_blog {
+    display: grid; */
+    /* .tetu_about{
+    box-sizing: border-box;
+}
+     */
+    /* div {
+        display: block;
+    }
+} */
+/* } */
+    /* .shop-cart-table {
+        padding: 30px 15px;
+    }
+    
+    .shop-cart-table {
+        background: #fff none repeat scroll 0 0;
+        padding: 40px;
+    } */
