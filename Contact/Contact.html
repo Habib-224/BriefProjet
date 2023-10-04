@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="footer contact .css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <title>Document</title>
+</head>
+<style>
+    #MenuSec{
+       position: absolute;
+       left: -250px;
+
+   }
+
+   #X_Bar{
+       display: none;
+       /* margin-top: -50px; */
+       /* z-index: 3; */
+       margin-left: 30px;
+   }
+</style>
+<body>
+    <div class="Menu">
+        <ul>
+            <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
+            <li ><img src="../Public/image/logo/logo.png" alt=""></li>
+            <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+        </ul>
+        <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
+        
+    </div>
+    <div class="Container_Banner">
+        <h1>CONTACT US</h1>
+        <div class="Container_Banner_Link">
+            <p>Home/Contact</p>
+        </div>
+    </div>
+    
+    <br>
+    <div id="MenuSec" >
+        <ul>
+            
+            <li><a href="">HOME</a></li>
+            <li><a href="../Produit/Produit.html">PRODUCTS</a></li>
+            <li><a href="">SHORTCODES</a></li>
+            <li><a href="">ACCESSOIRES</a></li>
+            <li><a href="">LOOKBOOK</a></li>
+            <li><a href="../Blog/Blog.html">BLOG</a></li>
+            <li><a href="">PAGES</a></li>
+            <li><a href="../About/About.html">ABOUT US</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function afficher(){
+
+            let menu = document.getElementById('MenuSec');
+            let X_Bar = document.getElementById('X_Bar');
+            let MenuBarx = document.getElementById("MenuBarx");
+            // menu.id.add('SecondMenuul')
+            menu.style.left="0";
+            menu.style.top="20px";
+            menu.style.transition="0.5s"
+            menu.style.backgroundColor="white";
+            menu.style.width="300px";
+            menu.style.height="1000px";
+            menu.style.position="fixed";
+            menu.style.marginTop="25px";
+            // menu.style.zIndex=6;
+            X_Bar.style.display="block";
+            X_Bar.style.position="absolute";
+            X_Bar.style.top="10px";
+            X_Bar.style.zIndex=5;
+            MenuBarx.style.visibility="hidden ";
+            
+            // X_Bar.style.marginTop="50px";
+            
+        }
+
+        function cacher(){
+            let menu = document.getElementById('MenuSec');
+            let X_Bar = document.getElementById('X_Bar');
+            let MenuBarx = document.getElementById("MenuBarx");
+            // menu.id.add('SecondMenuul')
+            menu.style.left="-400px";
+            // menu.style.top="20px";
+            menu.style.transition="0.5s"
+            // menu.style.backgroundColor="white";
+            // menu.style.width="300px";
+            // menu.style.height="1000px";
+            // menu.style.position="fixed";
+            // menu.style.marginTop="25px";
+            // menu.style.zIndex=6;
+            X_Bar.style.display="none";
+            X_Bar.style.zIndex=5;
+            MenuBarx.style.visibility="visible ";
+        }
+    </script>
+
+<main>
+  
+       <section class="contenu">
+          <div class="form">
+            <div class="toute">
+               <div class="fa-icon">
+                  <i class="fa-solid fa-phone" id="icon" style="color: #98989a;"></i><p class="num">+880 1234 123456 <br> +880 1234 123456</p>
+               </div>
+               <div class="fa-icon">
+                  <i class="fa-solid fa-envelope" id="icon" style="color: #98989a;"></i><p class="num">Company-email@gmail.com <br> Your-email@gmail.com</p>
+               </div>
+            </div>
+            <h5>SEND MESSAGE</h5>
+            <hr class="trait" width="50px">
+              <form action="#">
+               <input type="text" placeholder="Your Name here..." class="f2"><br>
+                  <input type="text" placeholder="Your Email here..." class="f2"><br>
+                  <textarea name="Message" id="" cols="30" rows="5" placeholder="Message"></textarea><br>
+                  <button type="button">SUBMIT MESSAGE</button>
+              </form>
+          </div>
+          <div id="map">
+          </div>
+      </section>
+    </main>
+    <script>
+      //Map
+        var map = L.map('map').setView([14.716677, -17.467686], 10);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        var marker = L.marker([14.716677, -17.467686]).addTo(map);
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("Groupe 3")
+                .openOn(map);
+        }
+        map.on('click', onMapClick);
+        //navBar fixed
+      let navBarFixed = () => {
+        let navBar = document.querySelector(".navContainer");
+        console.log(navBar);
+
+        let pos = document.documentElement.scrollTop;
+        console.log(pos)
+
+        if (pos > 10) {
+          navBar.classList.add("fixed");
+          navBar.style.background = "2222227e"
+          // console.log("fixed");
+        } else {
+          navBar.style.background = "2222227e";
+          navBar.classList.remove("fixed");
+          // console.log("not-fixed");
+        }
+      };
+
+      // window.onscroll = navBarFixed;
+      // window.onload = navBarFixed;
+
+      // scroll
+      let calcScrollValue = () =>{
+        let scrollProgress = document.getElementById('progress');
+        let scrolProgressValue = document.getElementById('progressValue');
+
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100)/calcHeight)
+        if(pos>10){
+          scrollProgress.style.display = 'grid';
+        }else{
+          scrollProgress.style.display = 'none';
+        }
+
+        scrollProgress.addEventListener('click', () => {
+          document.documentElement.scrollTop = 0;
+        })
+
+        scrollProgress.style.background = `conic-gradient( #06A3DA ${scrollValue}%, white ${scrollValue}%)`;
+      }
+
+      // Ajouter un seul gestionnaire d'événements
+      window.addEventListener('scroll', () => {
+        navBarFixed();
+        calcScrollValue();
+      });
+
+      // Exécutez les fonctions une fois au chargement de la page
+      window.addEventListener('load', () => {
+        navBarFixed();
+        calcScrollValue();
+      });
+
+      //menu
+      let menuTogler = document.querySelector('.menuTogler');
+      let menuToglerIcon = document.querySelector('.menuTogler i');
+      let dropDownMenu = document.querySelector('.dropDownMenu');
+
+      menuTogler.onclick = function(){
+        dropDownMenu.classList.toggle('open');
+        let isOpen = dropDownMenu.classList.contains('open');
+
+        menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+      }
+    </script>
+   
+
+</body>
+</html>
