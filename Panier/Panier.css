@@ -45,5 +45,7 @@
 .remove-button:hover {
     background-color: #cc0000;
 }
-
+.lienss:focus-within {
+    background-color: #C8A165;
+}
 
