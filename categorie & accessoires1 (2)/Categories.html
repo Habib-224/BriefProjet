@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="menu.css">
     <title>Catégories & Accessoires</title>
 </head>
+
+<style>
+     .ajout .aside0.itemBox2{
+       display: none;
+   }
+
+   .Menu ul li a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .list1{
+        cursor: pointer;
+    }
+</style>
 <body>
     <div class="Menu">
         <ul>
@@ -111,10 +126,10 @@
                 <hr>
                 <div class="list1">
                     <ul>
-                        <li><a href="">Shoes</a></li>
-                        <li><a href="">Watch</a></li>
-                        <li><a href="">T-shirt</a></li>
-                        <li><a href="">Shirt</a></li>
+                        <li class="List active" data-filter="All">All</li>
+                        <li class="List" data-filter="Best">Best</li>
+                        <li class="List" data-filter="Most">Most</li>
+                        <li class="List" data-filter="Discounts">Discounts</li>
                     </ul>
                 </div>
 
@@ -180,8 +195,8 @@
 
     <!-- Details Categories -->
     <section class="did-not-fixe-aside" id="libass">
-        <div class="container-not-fixed-aside">
-            <div class="aside1">
+        <div class="container-not-fixed-aside ajout">
+            <div class="aside1 aside0" data-item="Best">
                 <div>
                     <img src="6.jpg" alt="">
                 </div>
@@ -221,8 +236,8 @@
                 
             </div>
 <!-------------------------------------------------------------------------------------------------------  -->
-
-            <div class="aside2">
+            
+            <div class="aside2 aside0" data-item="Best">
                 <div>
                     <img src="3.jpg" alt="">
                 </div>
@@ -263,7 +278,7 @@
                     </div>
                 </div>
             </div>
-            <div class="aside3">
+            <div class="aside3 aside0" data-item="Most">
                 <div>
                     <img src="2.jpg" alt="">
                 </div>
@@ -304,7 +319,7 @@
                     </div>
                 </div>
             </div>
-            <div class="aside4">
+            <div class="aside4 aside0" data-item="Most">
                 <div>
                     <img src="10.jpg" alt="">
                 </div>
@@ -345,7 +360,7 @@
                     </div>
                 </div>
             </div>
-            <div class="aside5">
+            <div class="aside5 aside0" data-item="Discounts">
                 <div>
                     <img src="12.jpg" alt="">
                 </div>
@@ -399,10 +414,40 @@
                     </ul>
                 </div>
             </div>
+
+            <script>
+                let List = document.querySelectorAll('.List');
+                let itemBox = document.querySelectorAll('.aside0');
+                console.dir(itemBox.length);
+                console.dir(List.length);
+                for(let i=0; i<List.length; i++){
+                    List[i].addEventListener('click', function(){
+                        for(let j=0; j<List.length; j++){
+                            List[j].classList.remove('active');
+                        }
+                        this.classList.add('active');
+                        let dataFilter = this.getAttribute('data-filter');
+    
+                        for (let k = 0; k < itemBox.length; k++) {
+                           itemBox[k].classList.remove('active'); // Supprimez la classe 'moi' de tous les éléments
+                           itemBox[k].classList.add('itemBox2'); 
+                           if(itemBox[k].getAttribute('data-item')== dataFilter || dataFilter=="All"){
+                            itemBox[k].classList.remove('itemBox2');
+                             itemBox[k].classList.add('active');
+    
+                           }
+                    
+                        }
+                    })
+                        
+                    
+                }
+                console.log(List.length)
+            </script>
         </div>
     </section>
     <br><br><br><br><br><br><br><br>
-    <footer>
+    <!-- <footer>
         <div class="Footer_Container">
             <div class="Footer_Container_Element">
                 <h6>CONTACT US</h6>
@@ -451,6 +496,6 @@
                 <img src="../Blog/4.png" alt="">
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
