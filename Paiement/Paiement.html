@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="footer.css"> -->
-    <link rel="stylesheet" href="Paiement.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="Panier.css">
+    <title>Panier</title>
     <style>
         body {
             background-color: #ccc;
@@ -26,88 +26,75 @@
             padding: 20px;
         }
 
-        #MenuSec {
-            position: fixed;
-            left: -250px;
-            top: 0;
-            width: 250px;
-            height: 100%;
-            background-color: white;
-            z-index: 999;
-            padding-top: 60px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        }
+         
+        #MenuSec{
+        position: absolute;
+        left: -250px;
 
-        .Menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1em;
-            background-color: white;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        }
+    }
 
-        .Menu ul {
-            list-style: none;
-            display: flex;
-        }
+    #X_Bar{
+        display: none;
+        /* margin-top: -50px; */
+        /* z-index: 3; */
+        margin-left: 30px;
+    }
 
-        .Menu ul li {
-            padding: 0 1em;
-            cursor: pointer;
-        }
+    #sup{
+     color: white;
+     background-color: #C87065;
+     padding: 0.3em;
+     border-radius: 50%;
 
-        .Footer_Container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            background-color: white;
-            padding: 1em;
-            margin-top: 20px;
-        }
+   }
+    .Menu ul li a{
+        color: black;
+        text-decoration: none;
+    }
 
-        .Footer_Container_Element {
-            flex: 1 1 200px;
-            margin: 0 1em;
-        }
-
-        .Footer_Container_Paiement {
-            /* background-color: #333; */
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
+    #quote{
+        color:white;
+        text-decoration: none;
+    }
     </style>
 </head>
-
+ 
 <body>
+
+
+
     <div class="Menu">
         <ul>
             <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
-            <li><img src="../Public/image/logo/logo.png" alt=""></li>
-            <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+            <li ><a href="../index.html"><img src="../Public/image/logo/logo.png" alt=""></a></li>
+            <li><i class="fa-solid fa-cart-shopping"></i><sup id="sup">3</sup></li>
         </ul>
         <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
+        
     </div>
     <div class="Container_Banner">
-        <h1>CONTACT US</h1>
+        <h1>CHECK OUT</h1>
         <div class="Container_Banner_Link">
-            <p>Home/Contact</p>
+            <p>Home/CHECK OUT</p>
         </div>
     </div>
-    <div id="MenuSec">
+    
+    <br>
+    <div id="MenuSec" >
         <ul>
-            <li><a href="">HOME</a></li>
+            
+            <li><a href="../index.html">HOME</a></li>
             <li><a href="../Produit/Produit.html">PRODUCTS</a></li>
             <li><a href="">SHORTCODES</a></li>
-            <li><a href="">ACCESSOIRES</a></li>
+            <li><a href="../categorie & accessoires1 (2)/Categories.html">ACCESSOIRES</a></li>
             <li><a href="">LOOKBOOK</a></li>
             <li><a href="../Blog/Blog.html">BLOG</a></li>
             <li><a href="">PAGES</a></li>
             <li><a href="../About/About.html">ABOUT US</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="../Contact/Contact.html">CONTACT</a></li>
         </ul>
     </div>
+
     <script>
         function afficher(){
 
@@ -355,54 +342,55 @@
             </div>
         </div>
     </div>
-	<div class="Footer_Container">
-		<div class="Footer_Container_Element">
-			<h6>CONTACT US</h6>
-			<hr>
-			<div class="Footer_Container_Element_Contact">
-				  <p>Address:Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;City Name, Country Name</p>
-				  <p>Cell-Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012 345 678 0123</p>
-				  <p>Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@example.com.com</p>
-			</div>
-		</div>
-		<div class="Footer_Container_Element">
-			<h6>ACCOUNTS</h6>
-			<hr>
-			<p><i class="fa-solid fa-circle-dot"></i>&nbsp;My Account</p>
-			<p><i class="fa-solid fa-circle-dot"></i>&nbsp; My Wishlist</p>
-			<p><i class="fa-solid fa-circle-dot"></i>&nbsp;My Cart</p>
-			<p><i class="fa-solid fa-circle-dot"></i>&nbsp;Sign In</p>
-			<p><i class="fa-solid fa-circle-dot"></i>&nbsp;  Check out</p>
-		</div>
-		<div class="Footer_Container_Element">
-			<h6>SHIPPING</h6>
-			<hr>
-			<p><i class="fa-solid fa-circle-dot"></i>&nbsp;New Products</p>
-			<p><i class="fa-solid fa-circle-dot"></i>&nbsp;Top Sellers</p>
-			<p><i class="fa-solid fa-circle-dot"></i>&nbsp;Manufactirers</p>
-			<p><i class="fa-solid fa-circle-dot"></i>&nbsp;Suppliers</p>
-			<p><i class="fa-solid fa-circle-dot"></i>&nbsp; Specials</p>
-		</div>
-		<div class="Footer_Container_Element">
-			<h6>EMAIL NEWSLETTERS</h6>
-			<hr>
-			<input type="Email" placeholder="Email Address......"><br>
-			<button>SUBSCRIBE</button><br>
-		</div>
-		<br><br><br><br>
-	</div>
-	<div class="Footer_Container_Paiement">
-		<p>© Hurst 2022. All Rights Reserved.</p>
-	   <div class="Footer_Container_Paiement_img">
-		 <img src="../Public/image/payment/1.png" alt="">
-		 <img src="../Public/image/payment/2.png" alt="">
-		 <img src="../Public/image/payment/3.png" alt="">
-	   </div>
-    </div>
-	</div>
+    <!-- <div class="Footer_Container">
+            <div class="Footer_Container_Element">
+                <h6>CONTACT US</h6>
+                <hr>
+                <div class="Footer_Container_Element_Contact">
+                      <p>Address:Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;City Name, Country Name</p>
+                      <p>Cell-Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012 345 678 0123</p>
+                      <p>Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@example.com.com</p>
+                </div>
+            </div>
+            <div class="Footer_Container_Element">
+                <h6>ACCOUNTS</h6>
+                <hr>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;My Account</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp; My Wishlist</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;My Cart</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Sign In</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;  Check out</p>
+            </div>
+            <div class="Footer_Container_Element">
+                <h6>SHIPPING</h6>
+                <hr>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;New Products</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Top Sellers</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Manufactirers</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Suppliers</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp; Specials</p>
+            </div>
+            <div class="Footer_Container_Element">
+                <h6>EMAIL NEWSLETTERS</h6>
+                <hr>
+                <input type="Email" placeholder="Email Address......"><br>
+                <button>SUBSCRIBE</button><br>
+            </div>
+            <br><br><br><br>
+        </div>
+        <div class="Footer_Container_Paiement">
+            <p>© Hurst 2022. All Rights Reserved.</p>
+           <div class="Footer_Container_Paiement_img">
+             <img src="../Public/image/payment/1.png" alt="">
+             <img src="../Public/image/payment/2.png" alt="">
+             <img src="../Public/image/payment/3.png" alt="">
+           </div>
+        </div> -->
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
 
 </html>
+
