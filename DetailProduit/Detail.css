@@ -153,42 +153,41 @@
     border: 10px;
 }
 #premier{
-    height: 350px;
+    height: 430px;
 }
 .major{
-    margin-top: -290px;
-    margin-left: 330px;
+    margin-top: -370px;
+    margin-left: 390px;
 }
 .color{
-    margin-left: 330px;
+    margin-left: 390px;
 }
 .deux{
     background-color: #F6F6F6;
     width: 10%;
-    margin-left: 330px;
+    margin-left: 390px;
     height: 20px;
 }
 .un{
     background-color: #F6F6F6;
     width: 15%;
-    margin-left: 470px;
+    margin-left: 520px;
     margin-top: -36px;
     height: 20px;
 }
 .small{
-    margin-left: 330px;
+    margin-left: 390px;
 }
 .container{
     display: grid;
     background-color:#DDDDDD ;
     justify-content: center;
 }
-<<<<<<< HEAD
+ /* HEAD */
 #chevron{
     margin-top: 10px;
 }
-=======
->>>>>>> 623bf4cc2bb6d389c2e6ca0a8fbc5d1c2ad907ca
+
 @media only screen and (max-width: 900px){
     .image{
         display:grid;
