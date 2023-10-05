@@ -18,7 +18,7 @@
     margin-left: 30px;
 }
 
-#MenuSec ul {
+/* #MenuSec ul {
     padding-top: 10em;
     width: 100%;
 }
@@ -38,6 +38,35 @@
 
 
 #MenuSec ul li a{
+    text-decoration: none;
+    color: black;
+} */
+#MenuSec {
+    z-index: 1; 
+    background-color: white; 
+    padding: 10px; 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); 
+    
+}
+
+#MenuSec ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#MenuSec ul li {
+    line-height: 40px;
+    font-weight: bold;
+    color: #666666;
+}
+
+#MenuSec ul li:hover {
+    background-color: #C8A165;
+    color: white;
+}
+
+#MenuSec ul li a {
     text-decoration: none;
     color: black;
 }
