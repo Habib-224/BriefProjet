@@ -153,36 +153,41 @@
     border: 10px;
 }
 #premier{
-    height: 350px;
+    height: 430px;
 }
 .major{
-    margin-top: -290px;
-    margin-left: 330px;
+    margin-top: -370px;
+    margin-left: 390px;
 }
 .color{
-    margin-left: 330px;
+    margin-left: 390px;
 }
 .deux{
     background-color: #F6F6F6;
     width: 10%;
-    margin-left: 330px;
+    margin-left: 390px;
     height: 20px;
 }
 .un{
     background-color: #F6F6F6;
     width: 15%;
-    margin-left: 470px;
+    margin-left: 520px;
     margin-top: -36px;
     height: 20px;
 }
 .small{
-    margin-left: 330px;
+    margin-left: 390px;
 }
 .container{
     display: grid;
     background-color:#DDDDDD ;
     justify-content: center;
 }
+ /* HEAD */
+#chevron{
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 900px){
     .image{
         display:grid;
@@ -218,7 +223,10 @@
         grid-template-columns: auto;
         font-size: 15px;
     }
+
 }
+
+
 
 
 /* Menu Sec */
@@ -294,41 +302,30 @@
 
 }
 
-
 /* Debut Section Footer */
 
-.Footer_Container{
+/* .Footer_Container{
     display: flex;
-    justify-content: center;
+    justify-content: center; */
     /* align-items: center; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     background-color: #EEEEEE;
     height: auto;
     padding-top: 7em;
     gap: 100px;
     padding-bottom: 5em;
-}
+} */
 
-.Footer_Container_Element input{
-    width: 300px;
-    background-color: white;
-    border: thick solid transparent;
-    padding: 0.2em;
 
-}
 
-.Footer_Container_Element i{
-    font-size: 10px;
-}
-
-.Footer_Container_Element hr{
+/* .Footer_Container_Element hr{ */
     /* width: 25%; 
     border-width: 3px;
     border-color:#C87065; */
     /* color:orange; */
-}
 
-.Footer_Container_Element button{
+
+/* .Footer_Container_Element button{
     margin-top: 10px;
     padding: 0.2em;
     max-width: 150px;
@@ -339,23 +336,23 @@
     display: flex;
     justify-content: space-between;
     background-color:#F2F2F2;
-    /* row-gap: 300px; */
-}
+    
+} */
 
-.Footer_Container_Paiement_img{
+/* .Footer_Container_Paiement_img{
     margin-right: 100px;
-    /* width: 300px; */
-}
+    
+} */
 
-.Footer_Container_Paiement p{
+/* .Footer_Container_Paiement p{
     margin-left: 170px;
     color: black;
-}
-.Footer_Container_Element h5{
+} */
+/* .Footer_Container_Element h5{ */
     /* border-bottom: 2px solid #C87065; */ 
-}
 
-@media screen and (max-width:700px) {
+
+/* @media screen and (max-width:700px) {
     .Footer_Container_Paiement_img{
         margin-right: 10px;
        
@@ -365,5 +362,6 @@
         margin-left: 30px;
         color: black;
     }
-}
+} */
 /* Fin Section Footer */
+>>>>>>> 08ebf901863ceadfe774ec975c2b9c2a3de788df

@@ -46,11 +46,15 @@
 .contenu{
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 90px;
     margin: 0 18vh;
     margin-bottom: 14vh;
      margin-top: 20vh;
-
+     background-color: white;
+     padding-top: 20px;
+     padding-right: 20px;
+     padding-bottom: 20px;
 }
 .form{
     padding: 6vh;
@@ -128,6 +132,12 @@
 .num{
     margin-top: 20px;
 }
+.corps{
+    background-color: #F6F6F6;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 @media only screen and (max-width: 900px){
     .Address{
         display:grid;
@@ -164,7 +174,10 @@
         border: none;
         padding: 2vh;
     }
+/* <<<<<<< HEAD */
 }
+
+
 
 /* Menu Sec */
 #MenuSec ul {
@@ -241,6 +254,7 @@
 }
 
 
+
 .Footer_Container{
     display: flex;
     justify-content: center;
@@ -261,7 +275,7 @@
 
 }
 
-.Footer_Container_Element i{
+/* .Footer_Container_Element i{
     font-size: 15px;
 }
 
@@ -271,75 +285,7 @@
     border-color:#C87065; */
 }
 
-.Footer_Container_Element h6{
-    font-size: 17px;
-}
+ 
 
-.Footer_Container_Element button{
-    margin-top: 10px;
-    padding: 0.2em;
-    max-width: 150px;
-    border: thick solid transparent;
-    background-color: white;
-}
-.Footer_Container_Paiement{
-    display: flex;
-    justify-content: space-between;
-    background-color:#F2F2F2;
-    /* row-gap: 300px; */
-}
-
-.Footer_Container_Paiement_img{
-    margin-right: 100px;
-    /* width: 300px; */
-}
-
-.Footer_Container_Paiement p{
-    margin-left: 170px;
-    color: black;
-}
-.Footer_Container_Element h5{
-    /* border-bottom: 2px solid #C87065; */
-    
-    
-}
-
-@media screen and (max-width:700px) {
-    .Footer_Container_Paiement_img{
-        margin-right: 10px;
-       
-    }
-    
-    .Footer_Container_Paiement p{
-        margin-left: 30px;
-        color: black;
-    }
-}
-/* Fin Section Footer */
-
-/* Menu Sec */
-#MenuSec ul {
-    padding-top: 10em;
-    width: 100%;
-}
-#MenuSec ul li{
-    list-style: none;
-    line-height: 40px;
-    /* padding-left: 5em; */
-    width: 100%;
-    font-weight: bold;
-    color: #666666;
-}
-
-#MenuSec ul li:hover{
-    background-color: #C8A165;
-    color: white;
-}
-
-
-#MenuSec ul li a{
-    text-decoration: none;
-    color: black;
-}
 
 
