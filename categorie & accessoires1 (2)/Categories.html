@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>Catégories & Accessoires</title>
+</head>
+
+<style>
+
+   .list1 ul li.active{
+    color:#C87065;
+   }
+
+     .ajout .aside0.itemBox2{
+       display: none;
+   }
+
+   .Menu ul li a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .list1.active{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="Menu">
+        <ul>
+            <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
+            <li><img src="../Public/image/logo/logo.png" alt=""></li>
+            <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+        </ul>
+        <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
+    
+    </div>
+    <div class="Container_Banner">
+        <h1>PRODUCT LIST VIEW</h1>
+        <div class="Container_Banner_Link">
+            <p>Home/Shop</p>
+        </div>
+    </div>
+    
+    
+    <br><br>
+    
+    <div id="MenuSec">
+        <ul>
+    
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../Produit/Produit.html">PRODUCTS</a></li>
+            <li><a href="">SHORTCODES</a></li>
+            <li><a href="">ACCESSOIRES</a></li>
+            <li><a href="">LOOKBOOK</a></li>
+            <li><a href="../Blog/Blog.html">BLOG</a></li>
+            <li><a href="">PAGES</a></li>
+            <li><a href="../About/About.html">ABOUT US</a></li>
+            <li><a href="../Contact/Contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    
+    <script>
+        function afficher() {
+
+            let menu = document.getElementById('MenuSec');
+            let X_Bar = document.getElementById('X_Bar');
+            let MenuBarx = document.getElementById("MenuBarx");
+            // menu.id.add('SecondMenuul')
+            menu.style.left = "0";
+            menu.style.top = "20px";
+            menu.style.transition = "0.5s"
+            menu.style.backgroundColor = "white";
+            menu.style.width = "300px";
+            menu.style.height = "1000px";
+            menu.style.position = "fixed";
+            menu.style.marginTop = "25px";
+            // menu.style.zIndex=6;
+            X_Bar.style.display = "block";
+            X_Bar.style.position = "absolute";
+            X_Bar.style.top = "10px";
+            X_Bar.style.zIndex = 5;
+            MenuBarx.style.visibility = "hidden ";
+
+            // X_Bar.style.marginTop="50px";
+
+        }
+
+        function cacher() {
+            let menu = document.getElementById('MenuSec');
+            let X_Bar = document.getElementById('X_Bar');
+            let MenuBarx = document.getElementById("MenuBarx");
+            // menu.id.add('SecondMenuul')
+            menu.style.left = "-400px";
+            // menu.style.top="20px";
+            menu.style.transition = "0.5s"
+            // menu.style.backgroundColor="white";
+            // menu.style.width="300px";
+            // menu.style.height="1000px";
+            // menu.style.position="fixed";
+            // menu.style.marginTop="25px";
+            // menu.style.zIndex=6;
+            X_Bar.style.display = "none";
+            X_Bar.style.zIndex = 5;
+            MenuBarx.style.visibility = "visible ";
+        }
+    </script>
+    <!-- Les deux blocs situées en haut -->
+    <section class="fixed-top">
+        <div class="container-fixed-top">
+            <div class="top1">
+               <span><input type="text" placeholder="Search here ..."><i class="fa-solid fa-magnifying-glass" style="color: #949494;"></i></span>
+            </div>
+
+            <div class="top2">
+                <span><a href=""><i class="fa-solid fa-grip" style="color: #666666;"></i></a>&nbsp;<a href=""><i class="fa-solid fa-list" style="color: #4f4f4f;"></i></a></span>
+                <span class="txt">Showing 01-09 of 17 results</span>
+            </div>
+        </div>
+    </section>
+<br>
+    <!-- Listes des categories et Details Categories   -->
+    <section class="fixed-aside">
+        <div class="container-fixed-aside">
+            <div class="box1">
+                <h3>CATEGORIES</h3>
+                <hr>
+                <div class="list1">
+                    <ul>
+                        <li class="List active" data-filter="All">All</li>
+                        <li class="List" data-filter="Best">Best</li>
+                        <li class="List" data-filter="Most">Most</li>
+                        <li class="List" data-filter="Discounts">Discounts</li>
+                    </ul>
+                </div>
+
+                <div class="list2">
+                    <ul>
+                        <li><a href="">Accessoires</a></li>
+                        <li><a href="">Top Brands</a></li>
+                        <li><a href="">Jewelry</a></li>
+                    </ul>
+                </div>
+            </div>
+    <!--------------------------------------------------------------  -->
+            <div class="box2">
+                <h3>PRICE</h3>
+                <hr>
+                <p class="range">
+                    <strong>Your range:</strong> $50-$999
+                </p>
+            </div>
+    <!--------------------------------------------------------------  -->
+            <div class="box3">
+                 <h3>
+                    COLOR
+                </h3>
+                <hr>
+                <div class="somo"><span class="solmo" id="s1">1</span> &nbsp; &nbsp;<a href="">LightSolmon</a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 12</div>
+                <div class="somo"><span class="solmo" id="s2">1</span> &nbsp; &nbsp;<a href="">Dark Solmon</a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 20</div>
+                <div class="somo"><span class="solmo" id="s3">1</span> &nbsp; &nbsp;<a href="">Tomato</a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 59</div>
+                <div class="somo"><span class="solmo" id="s4">1</span> &nbsp; &nbsp;<a href="">Deep Sky Blue</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 45</div>
+                <div class="somo"><span class="solmo" id="s5">1</span> &nbsp; &nbsp;<a href="">Electric Purple</a>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 78</div>
+                <div class="somo"><span class="solmo" id="s6">1</span> &nbsp; &nbsp;<a href="">Atlantis</a> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 10</div>
+                <div class="somo"><span class="solmo" id="s7">1</span> &nbsp; &nbsp;<a href="">Deep Lilac</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 15</div>
+
+                
+            </div>
+    <!--------------------------------------------------------------  -->
+
+            <div class="box4">
+                <h3>
+                    SIZE
+                </h3>
+                <hr>
+                <div class="size">
+                    <ul>
+                        <li><a href="">M</a></li>
+                        <li><a href="">S</a></li>
+                        <li><a href="">L</a></li>
+                        <li><a href="">SL</a></li>
+                        <li><a href="">XL</a></li>
+                    </ul>
+                </div>
+            </div>
+    <!--------------------------------------------------------------  -->
+
+            <div class="box5">
+                <img src="brand.jpg" alt="">
+            </div> 
+    <!--------------------------------------------------------------  -->
+
+        </div>
+    </section>
+    <br>
+
+    <!-- Details Categories -->
+    <section class="did-not-fixe-aside" id="libass">
+        <div class="container-not-fixed-aside ajout">
+            <div class="aside1 aside0" data-item="Best">
+                <div>
+                    <img src="6.jpg" alt="">
+                </div>
+                <h5>New</h5>
+                <h4 class="dollars">$56.20</h4>
+                <div class="description">
+                    <div class="desc">
+                        <h2>DUMMY PRODUCT NAME</h2>
+                        <h4 id="somo">$56.20</h4>
+                        <p>There's isn't anything going to use a passage embarrassing</p>
+                    </div>
+                    <div class="rates">
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star-half" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star-half" style="color: #ffd700;"></i>
+                        <p>(27 Ratings)</p>
+                    </div>
+                </div>
+                <div class="add-icon" id="add-icon">
+                    <div class="icon-left">
+                        <a href=""><i class="fa-solid fa-minus" style="color: #7d7d7d;"></i></a>
+                        <span>|&nbsp; 02 &nbsp;|</span>
+                        <a href=""><i class="fa-solid fa-plus" style="color: #7d7d7d;"></i></a>
+                    </div>
+                    <div class="icon-right">
+                        <a href=""><i class="fa-regular fa-heart" style="color: #757575;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-magnifying-glass-plus" style="color: #878787;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-repeat" style="color: #878787;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-cart-shopping" style="color: #6e6e6e;"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+<!-------------------------------------------------------------------------------------------------------  -->
+            
+            <div class="aside2 aside0" data-item="Best">
+                <div>
+                    <img src="3.jpg" alt="">
+                </div>
+                <h5>New</h5>
+                <h4 class="dollars">$56.20</h4>
+                <div class="description">
+                    <div class="desc">
+                        <h2>DUMMY PRODUCT NAME</h2>
+                    </div>
+                    <div class="rates" id="ratess">
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star-half" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #8a8a8a;"></i>
+                        <p>(27 Ratings)</p>
+                    </div>
+                </div>
+                <h4 id="somo1">$56.20</h4>
+                <p id="txt-desc">There are many variations of passages of Lorem Ipsum available, but the majority have be <br>
+                    suffered alteration in some form, by injected humour, or randomised words which donot look <br>
+                    even slightly believable. If you are going to use a passage of Lorem Ipsum, you neede be sure there <br>
+                    isn't anythin going to use a passage embarrassing.</p>
+                <div class="add-icon" id="add-icon">
+                    <div class="icon-left">
+                        <a href=""><i class="fa-solid fa-minus" style="color: #7d7d7d;"></i></a>
+                        <span>|&nbsp; 02 &nbsp;|</span>
+                        <a href=""><i class="fa-solid fa-plus" style="color: #7d7d7d;"></i></a>
+                    </div>
+                    <div class="icon-right">
+                        <a href=""><i class="fa-regular fa-heart" style="color: #757575;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-magnifying-glass-plus" style="color: #878787;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-repeat" style="color: #878787;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-cart-shopping" style="color: #6e6e6e;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aside3 aside0" data-item="Most">
+                <div>
+                    <img src="2.jpg" alt="">
+                </div>
+                <h5>New</h5>
+                <h4 class="dollars">$56.20</h4>
+                <div class="description">
+                    <div class="desc">
+                        <h2>DUMMY PRODUCT NAME</h2>
+                    </div>
+                    <div class="rates" id="ratess">
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star-half" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #8a8a8a;"></i>
+                        <p>(27 Ratings)</p>
+                    </div>
+                </div>
+                <h4 id="somo1">$56.20</h4>
+                <p id="txt-desc">There are many variations of passages of Lorem Ipsum available, but the majority have be <br>
+                    suffered alteration in some form, by injected humour, or randomised words which donot look <br>
+                    even slightly believable. If you are going to use a passage of Lorem Ipsum, you neede be sure there <br>
+                    isn't anythin going to use a passage embarrassing.</p>
+                <div class="add-icon" id="add-icon">
+                    <div class="icon-left">
+                        <a href=""><i class="fa-solid fa-minus" style="color: #7d7d7d;"></i></a>
+                        <span>|&nbsp; 02 &nbsp;|</span>
+                        <a href=""><i class="fa-solid fa-plus" style="color: #7d7d7d;"></i></a>
+                    </div>
+                    <div class="icon-right">
+                        <a href=""><i class="fa-regular fa-heart" style="color: #757575;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-magnifying-glass-plus" style="color: #878787;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-repeat" style="color: #878787;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-cart-shopping" style="color: #6e6e6e;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aside4 aside0" data-item="Most">
+                <div>
+                    <img src="10.jpg" alt="">
+                </div>
+                <h5>New</h5>
+                <h4 class="dollars">$56.20</h4>
+                <div class="description">
+                    <div class="desc">
+                        <h2>DUMMY PRODUCT NAME</h2>
+                    </div>
+                    <div class="rates" id="ratess">
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star-half" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #8a8a8a;"></i>
+                        <p>(27 Ratings)</p>
+                    </div>
+                </div>
+                <h4 id="somo1">$56.20 <span class="dark-price">$96.20</span></h4>
+                <p id="txt-desc">There are many variations of passages of Lorem Ipsum available, but the majority have be <br>
+                    suffered alteration in some form, by injected humour, or randomised words which donot look <br>
+                    even slightly believable. If you are going to use a passage of Lorem Ipsum, you neede be sure there <br>
+                    isn't anythin going to use a passage embarrassing.</p>
+                <div class="add-icon" id="add-icon">
+                    <div class="icon-left">
+                        <a href=""><i class="fa-solid fa-minus" style="color: #7d7d7d;"></i></a>
+                        <span>|&nbsp; 02 &nbsp;|</span>
+                        <a href=""><i class="fa-solid fa-plus" style="color: #7d7d7d;"></i></a>
+                    </div>
+                    <div class="icon-right">
+                        <a href=""><i class="fa-regular fa-heart" style="color: #757575;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-magnifying-glass-plus" style="color: #878787;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-repeat" style="color: #878787;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-cart-shopping" style="color: #6e6e6e;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aside5 aside0" data-item="Discounts">
+                <div>
+                    <img src="12.jpg" alt="">
+                </div>
+                <h5>New</h5>
+                <h4 class="dollars">$56.20</h4>
+                <div class="description">
+                    <div class="desc">
+                        <h2>DUMMY PRODUCT NAME</h2>
+                    </div>
+                    <div class="rates" id="ratess">
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star-half" style="color: #ffd700 ;"></i>
+                        <i class="fa-solid fa-star" style="color: #8a8a8a;"></i>
+                        <p>(27 Ratings)</p>
+                    </div>
+                </div>
+                <h4 id="somo1">$56.20</h4>
+                <p id="txt-desc">There are many variations of passages of Lorem Ipsum available, but the majority have be <br>
+                    suffered alteration in some form, by injected humour, or randomised words which donot look <br>
+                    even slightly believable. If you are going to use a passage of Lorem Ipsum, you neede be sure there <br>
+                    isn't anythin going to use a passage embarrassing.</p>
+                <div class="add-icon" id="add-icon">
+                    <div class="icon-left">
+                        <a href=""><i class="fa-solid fa-minus" style="color: #7d7d7d;"></i></a>
+                        <span>|&nbsp; 02 &nbsp;|</span>
+                        <a href=""><i class="fa-solid fa-plus" style="color: #7d7d7d;"></i></a>
+                    </div>
+                    <div class="icon-right">
+                        <a href=""><i class="fa-regular fa-heart" style="color: #757575;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-magnifying-glass-plus" style="color: #878787;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-repeat" style="color: #878787;"></i></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href=""><i class="fa-solid fa-cart-shopping" style="color: #6e6e6e;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aside6">
+                <div class="pagination">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-left-long" style="color: #5c5c5c;"></i></a></li>
+                        <li><a href="">01</a></li>
+                        <li><a href="">02</a></li>
+                        <li><a href="">03</a></li>
+                        <li><a href="">04</a></li>
+                        <li><a href="">05</a></li>
+                        <li><a href=""><i class="fa-solid fa-right-long" style="color: #5c5c5c;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+                let List = document.querySelectorAll('.List');
+                let itemBox = document.querySelectorAll('.aside0');
+                console.dir(itemBox.length);
+                console.dir(List.length);
+                for(let i=0; i<List.length; i++){
+                    List[i].addEventListener('click', function(){
+                        for(let j=0; j<List.length; j++){
+                            List[j].classList.remove('active');
+                        }
+                        this.classList.add('active');
+                        let dataFilter = this.getAttribute('data-filter');
+    
+                        for (let k = 0; k < itemBox.length; k++) {
+                           itemBox[k].classList.remove('active'); // Supprimez la classe 'moi' de tous les éléments
+                           itemBox[k].classList.add('itemBox2'); 
+                           if(itemBox[k].getAttribute('data-item')== dataFilter || dataFilter=="All"){
+                            itemBox[k].classList.remove('itemBox2');
+                             itemBox[k].classList.add('active');
+    
+                           }
+                    
+                        }
+                    })
+                        
+                    
+                }
+                console.log(List.length)
+            </script>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br>
+    <!-- <footer>
+        <div class="Footer_Container">
+            <div class="Footer_Container_Element">
+                <h6>CONTACT US</h6>
+                <hr>
+                &nbsp;
+                <div class="Footer_Container_Element_Contact">
+                    <p>Address:Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;City Name, Country Name</p>
+                    <p>Cell-Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012 345 678 0123</p>
+                    <p>Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@example.com.com</p>
+                </div>
+            </div>
+            <div class="Footer_Container_Element">
+                <h6>ACCOUNTS</h6>
+                <hr>
+                &nbsp;
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;My Account</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp; My Wishlist</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;My Cart</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Sign In</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp; Check out</p>
+            </div>
+            <div class="Footer_Container_Element">
+                <h6>SHIPPING</h6>
+                <hr>
+                &nbsp;
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;New Products</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Top Sellers</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Manufactirers</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Suppliers</p>
+                <p><i class="fa-solid fa-circle-dot"></i>&nbsp; Specials</p>
+            </div>
+            <div class="Footer_Container_Element">
+                <h6>EMAIL NEWSLETTERS</h6>
+                <hr>
+                <input type="Email" placeholder="Email Address......"><br>
+                <button>SUBSCRIBE</button><br>
+            </div>
+            <br><br><br><br>
+        </div>
+        <div class="Footer_Container_Paiement">
+            <p>© Hurst 2022. All Rights Reserved.</p>
+            <div class="Footer_Container_Paiement_img">
+                <img src="../Blog/1.png" alt="">
+                <img src="../Blog/2.png" alt="">
+                <img src="../Blog/3.png" alt="">
+                <img src="../Blog/4.png" alt="">
+            </div>
+        </div>
+    </footer> -->
+</body>
+</html>

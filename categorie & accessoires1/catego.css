@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #d5d5d5;
+}
+
+.icon-srch {
+    background-color: rgb(255, 255, 255);
+    width: 13%;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+form input {
+    width: 70%;
+    padding: 11px 12px;
+    border: none;
+}
+
+form button {
+    padding: 11px 12px;
+    border: none;
+}
+
+.card-header {
+    background-color: #fff;
+}
+
+.size ul li {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #b3b3b3;
+    padding: 3px 5px;
+    font-size: 13px;
+}
+
+.range {
+    font-size: 14px;
+}
+
+.img1 img {
+    width: 100%;
+    padding: 5px 5px;
+}
+
+input {
+    border: none;
+    font-size: 13px;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+}
+
+.container {
+    display: flex;
+
+}
+
+.droite {
+    background-color: white;
+    width: 80%;
+    height: 55px;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+
+.treeview {
+    margin-left: -20px;
+}
+
+.top2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-top {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.icon-top i {
+    padding-left: 5px;
+}
+
+.txt {
+    font-size: 13px;
+    padding-top: 12px;
+    padding-right: 10px;
+}
+
+.mes-cartes {
+    display: grid;
+    grid-template-columns: 28.5% 28.5% 28.5%;
+    gap: 25px;
+    margin-left: 19rem;
+    margin-top: -75%;
+}
+
+.carte1,
+.carte2,
+.carte3,
+.carte4,
+.carte5,
+.carte6,
+.carte7,
+.carte8,
+.carte9 {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.card-header {
+    color: #4f4f4f;
+}
+
+#small {
+    font-size: 13px;
+}
+
+.produit img {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.new {
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: -19rem;
+    background-color: #C8A165;
+    padding: 1px 5px;
+    color: #fff;
+}
+
+.price {
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: -5rem;
+    color: #e9967a;
+    font-weight: 700;
+}
+
+.titre-carte {
+    text-align: center;
+    font-size: 17px;
+}
+
+.rates {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.rates i {
+    font-size: 12px;
+}
+
+.icon-carte {
+    background-color: #efefef;
+    width: 55%;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+#new {
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: -19rem;
+    background-color: #e9967a;
+    padding: 1px 5px;
+    color: #fff;
+}
+
+#paginat- {
+    margin-left: 19rem;
+    margin-top: 20px;
+
+}
+
+#paginat- ul {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 90%;
+}
+
+#paginat- ul li {
+    padding: 10px 0;
+}
+
+#paginat- ul li a {
+    padding-left: 5px;
+}

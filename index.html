@@ -23,6 +23,132 @@
        /* z-index: 3; */
        margin-left: 30px;
    }
+
+   #sup{
+     color: white;
+     background-color: #C87065;
+     padding: 0.3em;
+     border-radius: 50%;
+
+   }
+
+   .TriePushase h6.active{
+    color:#C87065;
+   }
+
+   .FeatureProduct .FeatureProduct_card.itemBox2{
+    display: none;
+   }
+
+   .Menu ul li a{
+        color: black;
+        text-decoration: none;
+    }
+
+
+    @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+    /* --------------------- */
+
+    ul, li { display: block; }
+    
+    #body {
+        left: 50%;
+        width: 609px;
+        height: 405px;
+        display: block;
+        position: absolute;
+        margin-left: -305px;
+    }
+    
+    #body * {
+        user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+    }
+
+    #body input { display: none; }
+    
+    #img-inner {
+        top: 0;
+        opacity: 0;
+        width: 609px;
+        height: 405px;
+        display: block;
+        position: absolute;
+        
+        transform: scale(0);
+        -moz-transform: scale(0);
+        -webkit-transform: scale(0);
+        
+        transition: all .7s ease-in-out;
+        -moz-transition: all .7s ease-in-out;
+        -webkit-transition: all .7s ease-in-out;
+    }
+    
+    #img-inner img {
+        width: 60%;
+        height: 50%;
+    }
+    
+    
+    #img-inner:hover ~ label.sb-bignav { opacity: 0.5em }
+    
+    label.sb-bignav:hover { opacity: 1; }
+    
+    
+    .sb-bignav {
+        width: 50px;
+        /* height: 100%; */
+        display: none;
+        top: -100px;
+        position: absolute;
+        
+        opacity: 0;
+        z-index: 9;
+        cursor: pointer;
+        
+        transition: opacity .2s;
+        -moz-transition: opacity .2s;
+        -webkit-transition: opacity .2s;
+    	
+        color: white;
+        font-size: 50pt;
+        text-align: center;
+        line-height: 380px;
+        font-family: "Varela Round", sans-serif;
+        background-color: rgba(255, 255, 255, .3);
+        text-shadow: 0px 0px 15px rgb(119, 119, 119);
+    }
+
+    
+    
+    label[title="Next"] { right: 0; }
+    label[title="Previous"] { left: 10; }
+    
+    input:checked + li > #img-inner {
+        opacity: 1;
+            
+        transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        
+        transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 1s ease-in-out;
+    }
+
+    input:checked + li > label { display: block; }
+    
+    /* .Slide_Right{
+        margin-top: -200px;
+    } */
+
+    /* #left{
+        margin-left: -200px;
+    } */
 </style>
 <body>
     <div class="Container">
@@ -31,7 +157,7 @@
             <ul>
                 <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
                 <li ><img src="Public/image/logo/logo.png" alt=""></li>
-                <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+                <li><a href="Panier/Panier.html"><i class="fa-solid fa-cart-shopping"></i><sup id="sup">3</sup></a></li>
             </ul>
             <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
         </div>
@@ -42,7 +168,7 @@
             <li><a href="">HOME</a></li>
             <li><a href="Produit/Produit.html">PRODUCTS</a></li>
             <li><a href="">SHORTCODES</a></li>
-            <li><a href="">ACCESSOIRES</a></li>
+            <li><a href="categorie & accessoires1 (2)/Categories.html">ACCESSOIRES</a></li>
             <li><a href="">LOOKBOOK</a></li>
             <li><a href="Blog/Blog.html">BLOG</a></li>
             <li><a href="">PAGES</a></li>
@@ -92,7 +218,7 @@
             // menu.style.marginTop="25px";
             // menu.style.zIndex=6;
             X_Bar.style.display="none";
-            X_Bar.style.zIndex=5;
+            X_Bar.style.zIndex=5; 
             MenuBarx.style.visibility="visible ";
         }
     </script>
@@ -104,8 +230,14 @@
                         <p>New</p>
                         <p>$50.00</p>
                     </div>
+                    <img src="Public/image/product/2.jpg" alt="">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Product Name</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button>Buy Now</button>
+                    
                 </div>
-                <div class="Slide_left1">
+                <br>
+                <div class="Slide_left">
+                    <img src="Public/image/product/2.jpg" alt="">
                     <p> New Product 2021 Lorem Ipsum is simply dummy text of the printing and types sate industry. Lorem Ipsum has been the industry.</p>
                 </div>
             </div>
@@ -113,6 +245,26 @@
             <div class="Acceuil_Slide_right">
                 <div class="Slide_Right">
                     <img src="Public/image/slider/slider-1/3-removebg-preview.png" alt="">
+                    <!-- <ul id="body">
+                        <input type="radio" name="radio-btn" id="img-1" checked />
+                        <li id="img-container">
+                            <div id="img-inner">
+                                <img src="Public/image/product/5.jpg" alt="">
+                            </div>
+                            <label for="img-6" class="sb-bignav" title="Previous">&#x2039;</label>
+                            <label for="img-2" class="sb-bignav" title="Next" id="left">&#x203a;</label>
+                        </li>
+                        
+                        <input type="radio" name="radio-btn" id="img-2" />
+                        <li id="img-container">
+                            <div id="img-inner">
+                                <img src="Public/image/slider/slider-1/1.jpg" alt="">
+                            </div>
+                            <label for="img-1" class="sb-bignav" title="Previous">&#x2039;</label>
+                            <label for="img-3" class="sb-bignav" title="Next" left>&#x203a;</label>
+                        </li>
+                    </ul> -->
+
                 </div>
                 
                 <div class="Slide_Right_text">
@@ -132,7 +284,7 @@
         <br>
 
         <div class="FeatureProduct">
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card" data-item="Discounts">
                 <div>
                     <img src="Public/image/product/1.jpg" alt="">
                 </div>
@@ -145,7 +297,7 @@
                     <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card" data-item="Discounts">
                 <div>
                     <img src="Public/image/product/2.jpg" alt="">
                 </div>
@@ -158,7 +310,7 @@
                     <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card" data-item="Most">
                 <div>
                     <img src="Public/image/product/3.jpg" alt="">
                 </div>
@@ -171,7 +323,7 @@
                     <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card" data-item="Discounts">
                 <div>
                     <img src="Public/image/product/4.jpg" alt="">
                 </div>
@@ -183,6 +335,7 @@
                     <h6>$56.20</h6>
                     <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 </div>
+                
             </div>
         </div>
         <!-----------------Fin Section Future Product------------------- -->
@@ -206,24 +359,24 @@
             </div>
         </div>
         <!-------------------Fin Section Discount ------------------------------>
-
+ 
 
         <br><br><br>
 
         <!------------------ Debut Section Purschase on line---------------- -->
         <h2 style="text-align: center;">Purchase Online on Hurst</h2>
         <div class="TriePushase">
-           <h6>New Arrivals</h6>
-           <h6>Best Seller</h6>
-           <h6>Most View</h6>
-           <h6>Discounts</h6>
+           <h6 class="List active" data-filter="All">New Arrivals</h6>
+           <h6 class="List" data-filter="Best">Best Seller</h6>
+           <h6 class="List" data-filter="Most">Most View</h6>
+           <h6 class="List" data-filter="Discounts">Discounts</h6>
 
         </div>
         <!-- <h6 style="text-align: center;">New Arrivals Best Seller Most View Discounts</h6> -->
         <br>
 
         <div class="FeatureProduct">
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card" data-item="Best">
                 <div>
                     <img src="Public/image/product/1.jpg" alt="">
                 </div>
@@ -236,7 +389,7 @@
                     <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card " data-item="Most">
                 <div>
                     <img src="Public/image/product/2.jpg" alt="">
                 </div>
@@ -249,7 +402,7 @@
                     <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card " data-item="Discounts">
                 <div>
                     <img src="Public/image/product/3.jpg" alt="">
                 </div>
@@ -262,7 +415,7 @@
                     <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card " data-item="Best">
                 <div>
                     <img src="Public/image/product/4.jpg" alt="">
                 </div>
@@ -276,9 +429,9 @@
                 </div>
             </div>
 
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card " data-item="Most">
                 <div>
-                    <img src="Public/image/product/1.jpg" alt="">
+                    <img src="Public/image/product/5.jpg" alt="">
                 </div>
                 <div class="FeatureProduct_card8_Text">
                     <h6>Dummy Product Name</h6>
@@ -289,9 +442,9 @@
                     <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card " data-item="Discounts">
                 <div>
-                    <img src="Public/image/product/2.jpg" alt="">
+                    <img src="Public/image/product/6.jpg" alt="">
                 </div>
                 <div class="FeatureProduct_card8_Text">
                     <h6>Dummy Product Name</h6>
@@ -302,9 +455,9 @@
                     <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card " data-item="Best">
                 <div>
-                    <img src="Public/image/product/3.jpg" alt="">
+                    <img src="Public/image/product/7.jpg" alt="">
                 </div>
                 <div class="FeatureProduct_card8_Text">
                     <h6>Dummy Product Name</h6>
@@ -315,9 +468,9 @@
                     <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
-            <div class="FeatureProduct_card">
+            <div class="FeatureProduct_card" data-item="Most">
                 <div>
-                    <img src="Public/image/product/4.jpg" alt="">
+                    <img src="Public/image/product/8.jpg" alt="">
                 </div>
                 <div class="FeatureProduct_card8_Text">
                     <h6>Dummy Product Name</h6>
@@ -330,6 +483,35 @@
             </div>
         </div>
         <!-------------------Fin Section Purschase on line ------------------>
+
+        <script>
+            let List = document.querySelectorAll('.List');
+            let itemBox = document.querySelectorAll('.FeatureProduct_card');
+            console.dir(itemBox);
+            for(let i=0; i<List.length; i++){
+                List[i].addEventListener('click', function(){
+                    for(let j=0; j<List.length; j++){
+                        List[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+                    let dataFilter = this.getAttribute('data-filter');
+
+                    for (let k = 0; k < itemBox.length; k++) {
+                       itemBox[k].classList.remove('active'); // Supprimez la classe 'moi' de tous les éléments
+                       itemBox[k].classList.add('itemBox2'); 
+                       if(itemBox[k].getAttribute('data-item')== dataFilter || dataFilter=="All"){
+                        itemBox[k].classList.remove('itemBox2');
+                         itemBox[k].classList.add('active');
+
+                       }
+                
+                    }
+                })
+                    
+                
+            }
+            // console.log(List.length)
+        </script>
 
        
         <br><br><br>
@@ -403,10 +585,10 @@
                     <h6>CONTACT US</h6>
                     <hr>
                     <div class="Footer_Container_Element_Contact">
-                          <p>Address:Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;City Name, Country Name</p>
-                          <p>Cell-Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012 345 678 0123</p>
-                          <p>Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@example.com.com</p>
-                    </div>
+                        <p>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City Name, Country Name</p>
+                        <p>Cell-Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012 345 678 0123</p>
+                        <p>Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@example.com.com</p>
+                  </div>
                 </div>
                 <div class="Footer_Container_Element">
                     <h6>ACCOUNTS</h6>
@@ -427,10 +609,12 @@
                     <p><i class="fa-solid fa-circle-dot"></i>&nbsp; Specials</p>
                 </div>
                 <div class="Footer_Container_Element">
-                    <h6>EMAIL NEWSLETTERS</h6>
-                    <hr>
+                    <h6>YOUR CHOICE PRODUCTS</h6>
+                    <img src="Public/image/product/6.jpg" style="width: 150px;" alt="">
+                    <img src="Public/image/product/6.jpg" style="width: 150px;" alt="">
+                    <!-- <hr>
                     <input type="Email" placeholder="Email Address......"><br>
-                    <button>SUBSCRIBE</button><br>
+                    <button>SUBSCRIBE</button><br> -->
                 </div>
                 <br><br><br><br>
             </div>

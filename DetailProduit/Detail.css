@@ -237,8 +237,8 @@
 #MenuSec ul li{
     list-style: none;
     line-height: 40px;
-    padding-left: 5em;
-    width: 100%;
+    padding-left: 4em;
+    width: 60%;
     font-weight: bold;
     color: #666666;
 }
@@ -302,4 +302,66 @@
 
 }
 
+/* Debut Section Footer */
 
+/* .Footer_Container{
+    display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap;
+    background-color: #EEEEEE;
+    height: auto;
+    padding-top: 7em;
+    gap: 100px;
+    padding-bottom: 5em;
+} */
+
+
+
+/* .Footer_Container_Element hr{ */
+    /* width: 25%; 
+    border-width: 3px;
+    border-color:#C87065; */
+    /* color:orange; */
+
+
+/* .Footer_Container_Element button{
+    margin-top: 10px;
+    padding: 0.2em;
+    max-width: 150px;
+    border: thick solid transparent;
+    background-color: white;
+}
+.Footer_Container_Paiement{
+    display: flex;
+    justify-content: space-between;
+    background-color:#F2F2F2;
+    
+} */
+
+/* .Footer_Container_Paiement_img{
+    margin-right: 100px;
+    
+} */
+
+/* .Footer_Container_Paiement p{
+    margin-left: 170px;
+    color: black;
+} */
+/* .Footer_Container_Element h5{ */
+    /* border-bottom: 2px solid #C87065; */ 
+
+
+/* @media screen and (max-width:700px) {
+    .Footer_Container_Paiement_img{
+        margin-right: 10px;
+       
+    }
+    
+    .Footer_Container_Paiement p{
+        margin-left: 30px;
+        color: black;
+    }
+} */
+/* Fin Section Footer */
+>>>>>>> 08ebf901863ceadfe774ec975c2b9c2a3de788df

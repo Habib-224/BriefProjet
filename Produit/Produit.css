@@ -70,8 +70,11 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
+
+
 
 .FeatureProduct_card_2{
     margin: auto;
@@ -82,6 +85,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -94,6 +98,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -106,6 +111,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -118,6 +124,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -130,6 +137,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -142,6 +150,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -154,6 +163,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -166,6 +176,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -178,6 +189,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -190,6 +202,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -202,6 +215,7 @@ body{
     max-width: 260px;
     height: 260px;
     padding: 1em;
+    cursor: pointer;
     /* padding: 0.em; */
 }
 
@@ -338,6 +352,8 @@ body{
     /* border-right: 1px solid black; */
     /* text-underline-offset: 2px; */
     padding-left: 1em;
+    margin-right: 15px;
+    color: darkgray;
 }
 
 /* Fin Section Produit */
@@ -365,7 +381,7 @@ body{
 }
 
 .Footer_Container_Element i{
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .Footer_Container_Element hr{

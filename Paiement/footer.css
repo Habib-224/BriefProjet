@@ -18,29 +18,6 @@ textarea{
     /* border: 1px solid blue; */
     width: 98.4%;
     height: 15vh;
-}
-
-
-.custom-select{
-    /* border: 1px solid blue; */
-    width: 100%;
-    height: 5vh;
-}
-.first {
-    /* border: 1px solid red; */
-    height: 83vh;
-
-}
-input{
-    /* border: 1px solid blue; */
-    width: 98.4%;
-    height: 5vh;
-
-}
-textarea{
-    /* border: 1px solid blue; */
-    width: 98.4%;
-    height: 15vh;
 
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -54,8 +31,8 @@ textarea{
 /* ------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 body {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -148,80 +125,3 @@ body {
     color: #fff !important; 
 
 }
-
-
-/* Debut Section Footer */
-
-.Footer_Container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* align-items: center; */
-    flex-wrap: wrap;
-    background-color: #EEEEEE;
-    height: auto;
-    padding-top: 7em;
-    /* gap: 100px; */
-    padding-bottom: 5em;
-}
-
-.Footer_Container_Element input{
-    width: 300px;
-    background-color: white;
-    border: thick solid transparent;
-    padding: 0.2em;
-
-}
-
-.Footer_Container_Element i{
-    font-size: 14px;
-}
-
-.Footer_Container_Element hr{
-    width: 25%;
-    border-width: 3px;
-    border-color:#C87065;
-    /* color:orange; */
-}
-
-.Footer_Container_Element button{
-    margin-top: 10px;
-    padding: 0.2em;
-    max-width: 150px;
-    border: thick solid transparent;
-    background-color: white;
-}
-.Footer_Container_Paiement{
-    display: flex;
-    justify-content: space-between;
-    background-color:#F2F2F2;
-    /* row-gap: 300px; */
-}
-
-.Footer_Container_Paiement_img{
-    margin-right: 100px;
-    /* width: 300px; */
-}
-
-.Footer_Container_Paiement p{
-    margin-left: 170px;
-    color: black;
-}
-.Footer_Container_Element h5{
-    /* border-bottom: 2px solid #C87065; */
-    
-    
-}
-
-@media screen and (max-width:700px) {
-    .Footer_Container_Paiement_img{
-        margin-right: 10px;
-       
-    }
-    
-    .Footer_Container_Paiement p{
-        margin-left: 30px;
-        color: black;
-    }
-}
-/* Fin Section Footer */

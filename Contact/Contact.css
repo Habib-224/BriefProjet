@@ -187,14 +187,15 @@
 #MenuSec ul li{
     list-style: none;
     line-height: 40px;
-    padding-left: 5em;
-    width: 100%;
+    padding-left: 3em;
+    /* width: 100%; */
     font-weight: bold;
     color: #666666;
 }
 
 #MenuSec ul li:hover{
     background-color: #C8A165;
+    width: 200px;
     color: white;
 }
 
@@ -251,5 +252,40 @@
     font-size: 40px;
 
 }
+
+
+
+.Footer_Container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    background-color: #EEEEEE;
+    height: auto;
+    padding-top: 7em;
+    gap: 100px;
+    padding-bottom: 5em;
+}
+
+.Footer_Container_Element input{
+    width: 300px;
+    background-color: white;
+    border: thick solid transparent;
+    padding: 0.2em;
+
+}
+
+/* .Footer_Container_Element i{
+    font-size: 15px;
+}
+
+.Footer_Container_Element hr{
+    /* width: 25%;
+    border-width: 3px;
+    border-color:#C87065; */
+}
+
+ 
+
 
 

@@ -46,7 +46,7 @@
 }
 
 .Footer_Container_Element i{
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .Footer_Container_Element hr{
@@ -168,5 +168,10 @@
     font-weight: bold;
     font-size: 40px;
 
+}
+
+.card1_blog{
+    background-color: white;
+    border-radius: 5px;
 }
 
