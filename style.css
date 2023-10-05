@@ -62,7 +62,7 @@ body{
 .text_inside p:nth-child(2){
     font-size: 18px;
 }
-
+/* 
 .Slide_left1{
     background-image: url('Public/image/product/2.jpg');
     background-position: center;
@@ -70,8 +70,7 @@ body{
     background-repeat: no-repeat;
     height: 215px;
     margin-bottom: 15px;
-    /* display: flex; */
-    /* justify-content: center; */
+   
 }
 
 .Slide_left{
@@ -79,10 +78,34 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 190px;
+    height: 210px;
     margin-bottom: 15px;
+    
+} */
+
+
+.Slide_left1{
+    background-color: #EFEFEF;
 }
 
+.Slide_left1 img{
+    width: 230px;
+    height: 170px;
+    display: block;
+    margin: auto;
+    /* background-color; */
+}
+
+.Slide_left{
+    background-color: #EFEFEF;
+    display: flex;
+}
+
+.Slide_left img{
+    width: 150px;
+    height: 150px;
+    /* background-color; */
+}
 
 
 
@@ -170,7 +193,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     /* background-color:#EEEEEE; */
-    gap: 30px;
+    gap: 20px;
 }
 
 .FeatureProduct .FeatureProduct_card{
@@ -363,7 +386,7 @@ body{
 }
 
 .Footer_Container_Element i{
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .Footer_Container_Element hr{

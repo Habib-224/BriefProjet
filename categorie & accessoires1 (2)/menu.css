@@ -58,7 +58,7 @@
  }
 
  .Container_Banner {
-     background: linear-gradient(0deg, #04061b67, #04061b67), url("");
+    background: linear-gradient(0deg,#04061b67,#04061b67), url("../Public/image/Background/1.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;

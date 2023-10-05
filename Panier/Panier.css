@@ -1,0 +1,312 @@
+/* Responsive styles for cart items */
+.cart-plus-minus-box {
+    text-align: center;
+    width: 3vh;
+    font-size: 13px;
+}
+
+.lienss:focus-within{
+    background-color:#C8A165;
+}
+.lienss a:focus-within{
+    background-color:#C8A165;
+    color: #fff !important;
+
+}
+
+
+/* Overlay styles for pop-up */
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 9;
+}
+
+/* Pop-up styles */
+.pop_up {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    width: 80%; 
+    max-width: 400px; /* Set your desired max-width */
+    max-height: 80%; 
+    overflow-y: auto; 
+}
+
+/* Cart item styles */
+.cart-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Remove button styles */
+.remove-button .cart-plus-minus-box {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #cc0000;
+}
+
+/*  menu styles */
+.Menu {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+}
+
+.Menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1em;
+    background-color: #FFFFFF; 
+}
+
+.Menu ul li {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Banner styles */
+.Container_Banner {
+    background: linear-gradient(0deg, #04061b67, #04061b67), url("../Public/image/Background/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.Container_Banner_Link {
+    color: white;
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+.Container_Banner h1 {
+    color: white;
+    text-align: center;
+    padding-top: 2.8em;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* Blog card styles */
+.card1_blog {
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    /* ... autres styles ... */
+}
+
+#MenuSec {
+    z-index: 1; 
+    background-color: white; 
+    padding: 10px; 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); 
+}
+
+#MenuSec ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#MenuSec ul li {
+    line-height: 40px;
+    font-weight: bold;
+    color: #F6F6F6;
+}
+
+#MenuSec ul li:hover {
+    background-color: #C8A165;
+    color: white;
+}
+
+#MenuSec ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Debut Section Footer */
+
+.Footer_Container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    background-color: #EEEEEE;
+    height: auto;
+    padding-top: 7em;
+    gap: 100px;
+    padding-bottom: 5em;
+}
+
+.Footer_Container_Element input{
+    width: 300px;
+    background-color: white;
+    border: thick solid transparent;
+    padding: 0.2em;
+
+}
+
+.Footer_Container_Element i{
+    font-size: 15px;
+}
+
+.Footer_Container_Element hr{
+    width: 25%;
+    border-width: 3px;
+    border-color:#C87065;
+    /* color:orange; */
+}
+
+.Footer_Container_Element button{
+    margin-top: 10px;
+    padding: 0.2em;
+    max-width: 150px;
+    border: thick solid transparent;
+    background-color: white;
+}
+.Footer_Container_Paiement{
+    display: flex;
+    justify-content: space-between;
+    background-color:#F2F2F2;
+    /* row-gap: 300px; */
+}
+
+.Footer_Container_Paiement_img{
+    margin-right: 100px;
+    /* width: 300px; */
+}
+
+.Footer_Container_Paiement p{
+    margin-left: 170px;
+    color: black;
+}
+.Footer_Container_Element h5{
+    /* border-bottom: 2px solid #C87065; */ 
+}
+
+@media screen and (max-width:700px) {
+    .Footer_Container_Paiement_img{
+        margin-right: 10px;
+       
+    }
+    
+    .Footer_Container_Paiement p{
+        margin-left: 30px;
+        color: black;
+    }
+}
+/* Fin Section Footer */
+
+
+
+/* Menu Sec */
+#MenuSec ul {
+    padding-top: 10em;
+    width: 100%;
+}
+#MenuSec ul li{
+    list-style: none;
+    line-height: 40px;
+    padding-left: 5em;
+    width: 100%;
+    font-weight: bold;
+    color: #666666;
+}
+
+#MenuSec ul li:hover{
+    background-color: #C8A165;
+    color: white;
+}
+
+
+#MenuSec ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.Menu{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+}
+
+.Menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1em;
+    background-color: #FFFFFF; 
+}
+
+.Menu ul li {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.Container_Banner{
+    background: linear-gradient(0deg,#04061b67,#04061b67), url("../Public/image/Background/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+}
+
+
+.Container_Banner_Link{
+    color: white;
+    margin-top:80px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left:90px;
+
+}
+
+.Container_Banner h1{
+    color:white;
+    text-align: center;
+    padding-top: 2.8em;
+    font-weight: bold;
+    font-size: 40px;
+
+}
+
+
+
+
+
+

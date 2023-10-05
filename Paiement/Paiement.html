@@ -1,47 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-		<link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="footer.css"> -->
     <link rel="stylesheet" href="Paiement.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paiement</title>
     <style>
+        body {
+            background-color: #ccc;
+        }
+
         .contai {
+            background-color: white;
+            width: 70%;
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns:1fr 1fr;
             gap: 30px;
+            margin: 20px auto;
+            padding: 20px;
         }
 
-        .first {
-            grid-column: 1/2;
-            grid-row: 1/15;
-            row-gap: 50px;
+        #MenuSec {
+            position: fixed;
+            left: -250px;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background-color: white;
+            z-index: 999;
+            padding-top: 60px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
         }
 
-        .second {
-            grid-column: 2/3;
-            grid-row: 1/15;
+        .Menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            background-color: white;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
         }
 
-        .midlle {
-            grid-column: 1/2;
-            grid-row: 15/20;
+        .Menu ul {
+            list-style: none;
+            display: flex;
         }
 
-        .end {
-            grid-column: 2/3;
-            grid-row: 15/20;
+        .Menu ul li {
+            padding: 0 1em;
+            cursor: pointer;
+        }
+
+        .Footer_Container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: white;
+            padding: 1em;
+            margin-top: 20px;
+        }
+
+        .Footer_Container_Element {
+            flex: 1 1 200px;
+            margin: 0 1em;
+        }
+
+        .Footer_Container_Paiement {
+            /* background-color: #333; */
+            color: white;
+            text-align: center;
+            padding: 1em;
         }
     </style>
 </head>
 
 <body>
+    <div class="Menu">
+        <ul>
+            <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
+            <li><img src="../Public/image/logo/logo.png" alt=""></li>
+            <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+        </ul>
+        <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
+    </div>
+    <div class="Container_Banner">
+        <h1>CONTACT US</h1>
+        <div class="Container_Banner_Link">
+            <p>Home/Contact</p>
+        </div>
+    </div>
+    <div id="MenuSec">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="../Produit/Produit.html">PRODUCTS</a></li>
+            <li><a href="">SHORTCODES</a></li>
+            <li><a href="">ACCESSOIRES</a></li>
+            <li><a href="">LOOKBOOK</a></li>
+            <li><a href="../Blog/Blog.html">BLOG</a></li>
+            <li><a href="">PAGES</a></li>
+            <li><a href="../About/About.html">ABOUT US</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>
+    <script>
+        function afficher(){
+
+            let menu = document.getElementById('MenuSec');
+            let X_Bar = document.getElementById('X_Bar');
+            let MenuBarx = document.getElementById("MenuBarx");
+            // menu.id.add('SecondMenuul')
+            menu.style.left="0";
+            menu.style.top="20px";
+            menu.style.transition="0.5s"
+            menu.style.backgroundColor="white";
+            menu.style.width="300px";
+            menu.style.height="1000px";
+            menu.style.position="fixed";
+            menu.style.marginTop="25px";
+            // menu.style.zIndex=6;
+            X_Bar.style.display="block";
+            X_Bar.style.position="absolute";
+            X_Bar.style.top="10px";
+            X_Bar.style.zIndex=5;
+            MenuBarx.style.visibility="hidden ";
+            
+            // X_Bar.style.marginTop="50px";
+            
+        }
+
+        function cacher(){
+            let menu = document.getElementById('MenuSec');
+            let X_Bar = document.getElementById('X_Bar');
+            let MenuBarx = document.getElementById("MenuBarx");
+            // menu.id.add('SecondMenuul')
+            menu.style.left="-400px";
+            // menu.style.top="20px";
+            menu.style.transition="0.5s"
+            // menu.style.backgroundColor="white";
+            // menu.style.width="300px";
+            // menu.style.height="1000px";
+            // menu.style.position="fixed";
+            // menu.style.marginTop="25px";
+            // menu.style.zIndex=6;
+            X_Bar.style.display="none";
+            X_Bar.style.zIndex=5;
+            MenuBarx.style.visibility="visible ";
+        }
+    </script>
+     <div class="gran"><div class="container mt-4 col-"><div class="row justify-content-center">
+        <div class="col-sm-6 col-md-3 mb-3">
+            <div class="card custom-card lienss "style=" text-align: center;">
+                <a style="text-decoration: none; color: black;" class="active p-4" href="#shopping-cart">SHOPPING CART</a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+            <div class="card custom-card lienss" style=" text-align: center;">
+                <a style="text-decoration: none; color: black;" class="active p-4" href="#wishlist">WISHLIST</a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+            <div class="card custom-card lienss"style=" text-align: center;">
+                <a style="text-decoration: none; color: black;" class="active p-4" href="#check-out">CHECK OUT</a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+            <div class="card custom-card lienss"style=" text-align: center;">
+                <a style="text-decoration: none; color: black;" class="active p-4" href="#order-complete">ORDER COMPLETE</a>
+            </div>
+        </div>
+    </div></div>
     <div class="contai">
-        <div class="grt first ">
+        <div class="grt first">
             <h2 class="title-1 title-border text-uppercase ">BILLINGS DETAILS</h2>
             <div class="col"><input type="text" placeholder="Your name here..."></div><br>
             <div class="col"><input type="text" placeholder="Email address here..."></div><br>
@@ -79,7 +214,7 @@
             </div><br>
             <div class="col"><textarea class="custom-textarea" placeholder="Your address here..."></textarea></div>
         </div>
-        <div class="grt second">
+        <div class="grt second ">
             <h2 class="title-1 title-border text-uppercase ">BILLINGS DETAILS</h2>
             <div class="col"><input type="text" placeholder="Your name here..."></div><br>
             <div class="col"><input type="text" placeholder="Email address here..."></div><br>
@@ -263,6 +398,7 @@
 		 <img src="../Public/image/payment/2.png" alt="">
 		 <img src="../Public/image/payment/3.png" alt="">
 	   </div>
+    </div>
 	</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

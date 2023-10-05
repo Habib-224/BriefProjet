@@ -12,10 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Gruppo&family=Oxygen:wght@300&family=Poppins:wght@100&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="Blog.css">
-    
 </head>
 
-<!-- <style>
+<style>
   #MenuSec{
      position: absolute;
      left: -250px;
@@ -27,32 +26,55 @@
     
      margin-left: 30px;
  }
-</style> -->
+
+ .card1_blog{
+  background-color: white;
+  height: 600px;
+ }
+
+ .card1_blog_2{
+  background-color: white;
+  height: 510px;
+  border: 1px solid darkgray;
+ }
+
+ #sup{
+     color: white;
+     background-color: #C87065;
+     padding: 0.3em;
+     border-radius: 50%;
+
+   }
+
+   .Container_Banner_Link a{
+     color: white;
+     text-decoration: none;
+   }
+</style>
 <body>
-  <!-- <div class="Menu">
+  <div class="Menu">
     <ul>
         <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
-        <li ><img src="../Public/image/logo/logo.png" alt=""></li>
-        <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+        <li><a href="../index.html"><img src="../Public/image/logo/logo.png" alt=""></a></li>
+        <li><i class="fa-solid fa-cart-shopping"></i><sup id="sup">3</sup></li>
     </ul>
     <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
     
 </div>
 <div class="Container_Banner">
-    <h1>ABOUT US</h1>
+    <h1>BLOG</h1>
     <div class="Container_Banner_Link">
-        <p>Home/Shop</p>
+        <p><a href="../index.html">Home/Blog</a></p>
     </div>
 </div>
 
-<br><br> -->
-<!-- <div id="MenuSec" >
+<br><br>
+<div id="MenuSec" >
     <ul>
-        
-        <li><a href="">HOME</a></li>
+        <li><a href="../index.html">HOME</a></li>
         <li><a href="../Produit/Produit.html">PRODUCTS</a></li>
         <li><a href="">SHORTCODES</a></li>
-        <li><a href="">ACCESSOIRES</a></li>
+        <li><a href="../categorie & accessoires1 (2)/Categories.html">ACCESSOIRES</a></li>
         <li><a href="">LOOKBOOK</a></li>
         <li><a href="../Blog/Blog.html">BLOG</a></li>
         <li><a href="">PAGES</a></li>
@@ -105,7 +127,7 @@
         X_Bar.style.zIndex=5;
         MenuBarx.style.visibility="visible ";
     }
-</script> -->
+</script>
   <!--  -->
     <div class="page_blog">
         <!-- <section>
@@ -124,40 +146,29 @@
                       </div>
                 </div> -->
                 <div>
-                    <div class="d-flex bg-white w-75 mx-auto m-3">
-                        <ul class="nav">
-                                <div></div>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Categorie</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Price</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Color</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link " href="#">Size</a>
-                                </li>
-                                <li class="nav-item float-end">
-                                  <a class="nav-link " href="#"> Showing 01-09 of 17 Results</a>
-                                </li>
-                            </ul>
-                            <!-- <div class="d-flex w-50 bg-black justify-content-end"> -->
-                              
-                            </div>
+                  <div class="FeatureProduct_Categorie">
+                    <div class="FeatureProduct_Categorie_Text">
+                        <p >Categories</p>
+                        <p>Price</p>
+                        <p>Color</p>
+                        <p>Size</p>   
+                        <p class="FeatureProduct_card8_Text_Last">Showing 01-09 of 17 Results</p>
+                    </div>
+        
+                </div>
+                
                     </div>
                     <div class="">
                         <div class="container">
                             <div class="row w-100 mx-auto p-4">
                               <div class="col">
                                 <div class="col">     
-                                  <div class="card">
+                                  <div class="card1_blog">
                                       <img src="../Blog/blog/1.jpg" class="card-img-top" alt="Image 1">
                                       <div class="d-flex w-100 bg-ligth justify-content-center ">
-                                          <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
+                                          <!-- <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
                                           <a href="#"><i class="bi bi-chat-right"></i><span>59 Comments</span></a>
-                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a>
+                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a> -->
                                       </div>      
                                       <div class="card-body">
                                           <div class="card-title d-flex"><span class="border border-danger display-5 text-danger">30</span>
@@ -177,9 +188,9 @@
                                   <div class="card">
                                       <img src="../Blog/blog/2.jpg" class="card-img-top" alt="Image 1">
                                       <div class="d-flex w-100 bg-ligth justify-content-center">
-                                          <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
+                                          <!-- <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
                                           <a href="#"><i class="bi bi-chat-right"></i><span>59 Comments</span></a>
-                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a>
+                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a> -->
                                       </div>      
                                       <div class="card-body">
                                           <div class="card-title d-flex"><span class="border border-danger display-5 text-danger">30</span>
@@ -199,9 +210,9 @@
                                   <div class="card">
                                       <img src="../Blog/blog/1.jpg" class="card-img-top" alt="Image 1">
                                       <div class="d-flex w-100 bg-ligth justify-content-center">
-                                          <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
+                                          <!-- <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
                                           <a href="#"><i class="bi bi-chat-right"></i><span>59 Comments</span></a>
-                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a>
+                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a> -->
                                       </div>      
                                       <div class="card-body">
                                           <div class="card-title d-flex"><span class="border border-danger display-5 text-danger">30</span>
@@ -220,12 +231,12 @@
                             <div class="row w-100 mx-auto p-4">
                               <div class="col">
                                 <div class="col">     
-                                  <div class="card">
+                                  <div class="card1_blog_2">
                                       <img src="../Blog/blog/4.jpg" class="card-img-top" alt="Image 1">
                                       <div class="d-flex w-100 bg-ligth justify-content-center">
-                                          <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
+                                          <!-- <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
                                           <a href="#"><i class="bi bi-chat-right"></i><span>59 Comments</span></a>
-                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a>
+                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a> -->
                                       </div>      
                                       <div class="card-body">
                                           <div class="card-title d-flex"><span class="border border-danger display-5 text-danger">30</span>
@@ -245,9 +256,9 @@
                                   <div class="card">
                                       <img src="../Blog/blog/5.jpg" class="card-img-top" alt="Image 1">
                                       <div class="d-flex w-100 bg-ligth justify-content-center">
-                                          <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
+                                          <!-- <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
                                           <a href="#"><i class="bi bi-chat-right"></i><span>59 Comments</span></a>
-                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a>
+                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a> -->
                                       </div>      
                                       <div class="card-body">
                                           <div class="card-title d-flex"><span class="border border-danger display-5 text-danger">30</span>
@@ -267,9 +278,9 @@
                                   <div class="card">
                                       <img src="../Blog/blog/6.jpg" class="card-img-top" alt="Image 1">
                                       <div class="d-flex w-100 bg-ligth justify-content-center">
-                                          <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
+                                          <!-- <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
                                           <a href="#"><i class="bi bi-chat-right"></i><span>59 Comments</span></a>
-                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a>
+                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a> -->
                                       </div>      
                                       <div class="card-body">
                                           <div class="card-title d-flex"><span class="border border-danger display-5 text-danger">30</span>
@@ -288,12 +299,12 @@
                             <div class="row w-100 mx-auto p-4">
                               <div class="col">
                                 <div class="col">     
-                                  <div class="card">
+                                  <div class="card1_blog_2">
                                       <img src="../Blog/blog/7.jpg" class="card-img-top" alt="Image 1">
                                       <div class="d-flex w-100 bg-ligth justify-content-center">
-                                          <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
+                                          <!-- <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
                                           <a href="#"><i class="bi bi-chat-right"></i><span>59 Comments</span></a>
-                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a>
+                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a> -->
                                       </div>      
                                       <div class="card-body">
                                           <div class="card-title d-flex"><span class="border border-danger display-5 text-danger">30</span>
@@ -313,9 +324,9 @@
                                   <div class="card">
                                       <img src="../Blog/blog/8.jpg" class="card-img-top" alt="Image 1">
                                       <div class="d-flex w-100 bg-ligth justify-content-center">
-                                          <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
+                                          <!-- <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
                                           <a href="#"><i class="bi bi-chat-right"></i><span>59 Comments</span></a>
-                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a>
+                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a> -->
                                       </div>      
                                       <div class="card-body">
                                           <div class="card-title d-flex"><span class="border border-danger display-5 text-danger">30</span>
@@ -335,9 +346,9 @@
                                   <div class="card">
                                       <img src="../Blog/blog/9.jpg" class="card-img-top" alt="Image 1">
                                       <div class="d-flex w-100 bg-ligth justify-content-center ">
-                                          <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
+                                          <!-- <a href="#"><i class="bi bi-heart-fill"></i><span>89 Like</span></a>
                                           <a href="#"><i class="bi bi-chat-right"></i><span>59 Comments</span></a>
-                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a>
+                                          <a href="#"><i class="bi bi-share"></i><span>29 Share</span></a> -->
                                       </div>      
                                       <div class="card-body">
                                           <div class="card-title d-flex"><span class="border border-danger display-5 text-danger">30</span>
@@ -360,7 +371,7 @@
                         <ul class="pagination justify-content-center">
                           <li class="page-item">
                             <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                              <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
                               <span class="sr-only"></span>
                             </a>
                           </li>
@@ -371,7 +382,7 @@
                           <li class="page-item"><a class="page-link" href="#">05</a></li>
                           <li class="page-item">
                             <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                              <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
                               <span class="sr-only"></span>
                             </a>
                           </li>
@@ -387,7 +398,7 @@
                     <h6>CONTACT US</h6>
                     <hr>
                     <div class="Footer_Container_Element_Contact">
-                          <p>Address:Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;City Name, Country Name</p>
+                          <p>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City Name, Country Name</p>
                           <p>Cell-Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012 345 678 0123</p>
                           <p>Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@example.com.com</p>
                     </div>

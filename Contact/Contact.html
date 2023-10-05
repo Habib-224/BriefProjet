@@ -28,13 +28,26 @@
        /* z-index: 3; */
        margin-left: 30px;
    }
+
+   #sup{
+     color: white;
+     background-color: #C87065;
+     padding: 0.3em;
+     border-radius: 50%;
+
+   }
+
+   .Container_Banner_Link a{
+     color: white;
+     text-decoration: none;
+   }
 </style>
 <body>
     <div class="Menu">
         <ul>
             <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
-            <li ><img src="../Public/image/logo/logo.png" alt=""></li>
-            <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+            <li><a href="../index.html"><img src="../Public/image/logo/logo.png" alt=""></a></li>
+            <li><i class="fa-solid fa-cart-shopping"></i><sup id="sup">3</sup></li>
         </ul>
         <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
         
@@ -42,7 +55,7 @@
     <div class="Container_Banner">
         <h1>CONTACT US</h1>
         <div class="Container_Banner_Link">
-            <p>Home/Contact</p>
+            <p><a href="../index.html">Home/Contact</a></p>
         </div>
     </div>
     
@@ -50,15 +63,15 @@
     <div id="MenuSec" >
         <ul>
             
-            <li><a href="">HOME</a></li>
+            <li><a href="../index.html">HOME</a></li>
             <li><a href="../Produit/Produit.html">PRODUCTS</a></li>
             <li><a href="">SHORTCODES</a></li>
-            <li><a href="">ACCESSOIRES</a></li>
+            <li><a href="../categorie & accessoires1 (2)/Categories.html">ACCESSOIRES</a></li>
             <li><a href="">LOOKBOOK</a></li>
             <li><a href="../Blog/Blog.html">BLOG</a></li>
             <li><a href="">PAGES</a></li>
             <li><a href="../About/About.html">ABOUT US</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="../Contact/Contact.html">CONTACT</a></li>
         </ul>
     </div>
 
@@ -217,6 +230,53 @@
         menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
       }
     </script>
+
+<footer>
+  <div class="Footer_Container">
+      <div class="Footer_Container_Element">
+          <h6>CONTACT US</h6>
+          <!-- <hr> -->
+          <div class="Footer_Container_Element_Contact">
+            <p>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City Name, Country Name</p>
+            <p>Cell-Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012 345 678 0123</p>
+            <p>Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@example.com.com</p>
+      </div>
+      </div>
+      <div class="Footer_Container_Element">
+          <h6>ACCOUNTS</h6>
+          <!-- <hr> -->
+          <p><i class="fa-solid fa-circle-dot"></i>&nbsp;My Account</p>
+          <p><i class="fa-solid fa-circle-dot"></i>&nbsp; My Wishlist</p>
+          <p><i class="fa-solid fa-circle-dot"></i>&nbsp;My Cart</p>
+          <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Sign In</p>
+          <p><i class="fa-solid fa-circle-dot"></i>&nbsp;  Check out</p>
+      </div>
+      <div class="Footer_Container_Element">
+          <h6>SHIPPING</h6>
+          <!-- <hr> -->
+          <p><i class="fa-solid fa-circle-dot"></i>&nbsp;New Products</p>
+          <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Top Sellers</p>
+          <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Manufactirers</p>
+          <p><i class="fa-solid fa-circle-dot"></i>&nbsp;Suppliers</p>
+          <p><i class="fa-solid fa-circle-dot"></i>&nbsp; Specials</p>
+      </div>
+      <div class="Footer_Container_Element">
+          <h6>EMAIL NEWSLETTERS</h6>
+          <!-- <hr> -->
+          <input type="Email" placeholder="Email Address......"><br>
+          <button>SUBSCRIBE</button><br>
+      </div>
+      <br><br><br><br>
+  </div>
+  <div class="Footer_Container_Paiement">
+      <p>© Hurst 2022. All Rights Reserved.</p>
+     <div class="Footer_Container_Paiement_img">
+       <img src="../Public/image/payment/1.png" alt="">
+       <img src="../Public/image/payment/2.png" alt="">
+       <img src="../Public/image/payment/3.png" alt="">
+     </div>
+  </div>
+</footer>
    
 
 </body>

@@ -27,13 +27,26 @@
         /* z-index: 3; */
         margin-left: 30px;
     }
+
+    #sup{
+     color: white;
+     background-color: #C87065;
+     padding: 0.3em;
+     border-radius: 50%;
+
+   }
+
+   .Container_Banner_Link a{
+     color: white;
+     text-decoration: none;
+   }
 </style>
 <body>
     <div class="Menu">
         <ul>
             <li onclick="afficher()" id="MenuBarx"><i class="fa-solid fa-bars"></i></li>
-            <li ><img src="../Public/image/logo/logo.png" alt=""></li>
-            <li><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></li>
+            <li><a href="../index.html"><img src="../Public/image/logo/logo.png" alt=""></a></li>
+            <li><i class="fa-solid fa-cart-shopping"></i><sup id="sup">3</sup></li>
         </ul>
         <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
         
@@ -41,7 +54,7 @@
     <div class="Container_Banner">
         <h1>ABOUT US</h1>
         <div class="Container_Banner_Link">
-            <p>Home/Shop</p>
+            <p><a href="../index.html">Home/About</a></p>
         </div>
     </div>
     
@@ -49,10 +62,10 @@
     <div id="MenuSec" >
         <ul>
             
-            <li><a href="">HOME</a></li>
+            <li><a href="../index.html">HOME</a></li>
             <li><a href="../Produit/Produit.html">PRODUCTS</a></li>
             <li><a href="">SHORTCODES</a></li>
-            <li><a href="">ACCESSOIRES</a></li>
+            <li><a href="../categorie & accessoires1 (2)/Categories.html">ACCESSOIRES</a></li>
             <li><a href="">LOOKBOOK</a></li>
             <li><a href="../Blog/Blog.html">BLOG</a></li>
             <li><a href="">PAGES</a></li>
@@ -63,7 +76,6 @@
 
     <script>
         function afficher(){
-
             let menu = document.getElementById('MenuSec');
             let X_Bar = document.getElementById('X_Bar');
             let MenuBarx = document.getElementById("MenuBarx");
@@ -82,9 +94,7 @@
             X_Bar.style.top="10px";
             X_Bar.style.zIndex=5;
             MenuBarx.style.visibility="hidden ";
-            
             // X_Bar.style.marginTop="50px";
-            
         }
 
         function cacher(){
@@ -138,8 +148,8 @@
                 </div>
               <div class="container p-5">
                 <div class="row justify-content-center w-100 mx-auto">
-                    <div class="col about_hover">
-                        <div class="card text-center text-light-emphasis ">
+                    <div class="col ">
+                        <div class="card1_blog text-center text-light-emphasis ">
                             <img src="team/1.png" alt="" class="w-50 mx-auto p-3">
                             <h3>NANCY HOLLAND</h3>
                             <p>CHARMAN</p>
@@ -153,7 +163,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col about_hover">
+                    <div class="col">
                         <div class="card text-center text-light-emphasis ">
                             <img src="team/2.png" alt="" class="w-50 mx-auto p-3">
                             <h3>HEATHER ESTRADA</h3>
@@ -168,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col about_hover">
+                    <div class="col ">
                         <div class="card text-center text-light-emphasis ">
                             <img src="team/3.png" alt="" class="w-50 mx-auto p-3">
                             <h3>NANCY HOLLAND</h3>
@@ -183,7 +193,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col about_hover">
+                    <div class="col ">
                         <div class="card text-center text-light-emphasis ">
                             <img src="team/1.png" alt="" class="w-50 mx-auto p-3">
                             <h3>SARA KNIGHT</h3>
@@ -210,10 +220,10 @@
                     <h6>CONTACT US</h6>
                     <hr>
                     <div class="Footer_Container_Element_Contact">
-                          <p>Address:Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;City Name, Country Name</p>
-                          <p>Cell-Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012 345 678 0123</p>
-                          <p>Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@example.com.com</p>
-                    </div>
+                        <p>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Address Goes Here, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City Name, Country Name</p>
+                        <p>Cell-Phone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012 345 678 0123</p>
+                        <p>Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@example.com.com</p>
+                  </div>
                 </div>
                 <div class="Footer_Container_Element">
                     <h6>ACCOUNTS</h6>

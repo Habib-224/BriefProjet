@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #efefef;
+    background-color: #F6F6F6;
 }
 
 .container-fixed-top {
@@ -20,13 +20,20 @@ body{
     
 }
 
-.top1, .top2{
+.top1{
     background-color: white;
+    margin-left: -37px;
+    width: 320px;
+}
+
+.top2{
+    background-color: white;
+    margin-left: -15px;
 }
 
 .container-fixed-aside{
     display: block;
-    margin-left: 178px;
+    margin-left: 150px;
     margin-top: -15px;
    
 }
@@ -366,12 +373,12 @@ a{
 
 #txt-desc{
     font-size: 11.5px;
-    margin-left: 15rem;
+    margin-left: 17rem;
     margin-top: 0.5rem;
 }
 
 #somo1{
-    margin-left: 15.1rem;
+    margin-left: 17rem;
     color: #e9967a;
 }
 
@@ -381,6 +388,7 @@ a{
 
 #add-icon{
     margin-top: -5vh;
+    margin-left: 2em;
 }
 .dark-price{
     color: #303030;
@@ -400,3 +408,14 @@ a{
 .pagination ul li{
     padding: 20px 0 5px 5px;
 }
+
+
+#libass{
+    margin-top: 4%;
+}
+
+.desc h2,h4,p{
+   /* text-align: center; */
+   margin-left: 30px;
+}
+/* 

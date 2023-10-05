@@ -79,7 +79,7 @@
 }
 /* Fin Section Footer */
 
-/* 
+
 
 #MenuSec ul {
     padding-top: 10em;
@@ -152,4 +152,47 @@
     font-size: 40px;
 
 }
- */
+
+.Footer_Container_Element i{
+    font-size: 15px;
+}
+
+.page-item  a{
+   color: darkgray;
+   border: none;
+   text-decoration: none;
+}
+
+
+.FeatureProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color:#EEEEEE; */
+    gap: 30px;
+}
+
+.FeatureProduct_Categorie{
+    width: 82%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.FeatureProduct_Categorie_Text{
+    /* width: 80%; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: darkgray;
+    font-size: 15px;
+}
+.FeatureProduct_card8_Text_Last{
+    display: block;
+    margin: auto;
+    margin-right: 30px;
+}
